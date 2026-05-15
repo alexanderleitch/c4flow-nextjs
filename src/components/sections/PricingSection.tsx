@@ -1,6 +1,5 @@
 import Link from "next/link";
-import { sanityFetch } from "@/sanity/lib/live";
-import { BUNDLES_BY_CATEGORY_QUERY, DISCOUNT_QUERY } from "@/sanity/lib/queries";
+import { getKnowledgeBase } from "@/lib/catalog";
 import { Container } from "@/components/shared/Container";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 import { PricingCards } from "@/components/ui/PricingCards";
@@ -18,11 +17,7 @@ function FooterNote({ text }: { text: string }) {
     <p className="mt-8 text-center text-sm text-neutral-400">
       {parts.map((part, i) =>
         /^contact us$/i.test(part) ? (
-          <Link
-            key={i}
-            href="/contact"
-            className="font-medium text-pink-500 underline hover:no-underline"
-          >
+          <Link key={i} href="/contact" className="font-medium text-pink-500 underline hover:no-underline">
             {part}
           </Link>
         ) : (
@@ -39,64 +34,27 @@ export async function PricingSection({
   bundleCategory,
   footerNote,
 }: PricingSectionProps) {
-  const [{ data: bundles }, { data: discountDoc }] = await Promise.all([
-    sanityFetch({
-      query: BUNDLES_BY_CATEGORY_QUERY,
-      params: { category: bundleCategory },
-      stega: false,
-    }),
-    sanityFetch({ query: DISCOUNT_QUERY, stega: false }),
-  ]);
+  const knowledge = await getKnowledgeBase();
+  const bundles = knowledge.bundles.filter((b) => b.category === bundleCategory);
 
-  if (!bundles?.length) return null;
+  if (!bundles.length) return null;
 
-  const discountActive = discountDoc?.enabled && discountDoc?.discountPercent;
-  const discountApplies =
-    discountActive &&
-    ((bundleCategory === "group" && discountDoc.applyToGroupBundles) ||
-      (bundleCategory === "private" && discountDoc.applyToPrivateBundles));
-  const discountPercent = discountApplies ? discountDoc.discountPercent : null;
-
-  const enrichedBundles = bundles.map(
-    (b: {
-      _id: string;
-      name: string;
-      tagline?: string | null;
-      price: number;
-      salePrice?: number | null;
-      note?: string | null;
-      highlighted?: boolean | null;
-    }) => {
-      const original = b.price;
-      const manualSale =
-        b.salePrice && b.salePrice < original ? b.salePrice : null;
-      const globalDiscount = discountPercent
-        ? Math.floor(original * (1 - discountPercent / 100))
-        : null;
-
-      let effectivePrice: number | null = null;
-      if (manualSale && globalDiscount) {
-        effectivePrice = Math.min(manualSale, globalDiscount);
-      } else {
-        effectivePrice = manualSale || globalDiscount;
-      }
-
-      const hasDiscount = effectivePrice !== null && effectivePrice < original;
-
-      return {
-        ...b,
-        originalPrice: original,
-        effectivePrice: hasDiscount ? effectivePrice : null,
-        hasDiscount,
-      };
-    }
-  );
+  const enriched = bundles.map((b) => ({
+    _id: b.id,
+    name: b.name,
+    tagline: b.tagline,
+    originalPrice: b.listPrice,
+    effectivePrice: b.hasDiscount ? b.currentPrice : null,
+    hasDiscount: b.hasDiscount,
+    note: b.note,
+    highlighted: b.highlighted,
+  }));
 
   return (
     <section className="py-8 md:py-24">
       <Container>
         <SectionHeading subtitle={subtitle}>{heading}</SectionHeading>
-        <PricingCards bundles={enrichedBundles} />
+        <PricingCards bundles={enriched} />
         {footerNote && <FooterNote text={footerNote} />}
       </Container>
     </section>

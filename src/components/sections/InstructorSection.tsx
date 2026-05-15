@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { Instagram } from "lucide-react";
-import { urlFor, blurProps } from "@/sanity/lib/image";
 import { Container } from "@/components/shared/Container";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 import { PortableText } from "@portabletext/react";
@@ -13,23 +12,20 @@ interface InstructorSectionProps {
     name: string | null;
     title: string | null;
     experience: string | null;
-    photo: { asset?: { _ref: string }; lqip?: string | null } | null;
+    photoUrl: string | null;
+    photoLqip?: string | null;
     bio: Array<Record<string, unknown>> | null;
-    shortBio: string | null;
+    shortBio?: string | null;
     instagramUrl: string | null;
     bookingUrl: string | null;
   } | null;
 }
 
-export function InstructorSection({
-  heading,
-  instructor,
-}: InstructorSectionProps) {
+export function InstructorSection({ heading, instructor }: InstructorSectionProps) {
   if (!instructor) return null;
 
   return (
     <section className="relative overflow-hidden py-8 md:py-24">
-      {/* Decorative gradient orb behind instructor photo */}
       <div
         className="gradient-orb absolute -left-40 top-1/2 h-[500px] w-[500px] -translate-y-1/2"
         aria-hidden="true"
@@ -39,40 +35,29 @@ export function InstructorSection({
         <SectionHeading>{heading || "Meet Your Instructor"}</SectionHeading>
 
         <div className="grid gap-8 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] md:items-start md:gap-8 lg:items-stretch lg:gap-10">
-          {/* Photo — standard image on mobile/tablet, fill on desktop */}
-          {instructor.photo?.asset && (
-              <div className="overflow-hidden rounded-2xl shadow-lg sm:max-w-md md:max-w-none lg:relative lg:min-h-full">
-              {/* Mobile / tablet: standard responsive image */}
+          {instructor.photoUrl && (
+            <div className="overflow-hidden rounded-2xl shadow-lg sm:max-w-md md:max-w-none lg:relative lg:min-h-full">
               <Image
-                src={urlFor(instructor.photo)
-                  .width(500)
-                  .height(670)
-                  .quality(85)
-                  .url()}
+                src={instructor.photoUrl}
                 alt={instructor.name || "Instructor"}
                 width={500}
                 height={670}
                 className="h-auto w-full object-cover object-top md:object-center lg:absolute lg:inset-0 lg:h-full lg:w-full"
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 384px, 320px"
-                {...blurProps(instructor.photo.lqip)}
+                {...(instructor.photoLqip
+                  ? { placeholder: "blur" as const, blurDataURL: instructor.photoLqip }
+                  : {})}
               />
             </div>
           )}
 
-          {/* Bio */}
           <div>
-            <h3 className="font-heading text-3xl text-primary-600 lg:text-4xl">
-              {instructor.name}
-            </h3>
+            <h3 className="font-heading text-3xl text-primary-600 lg:text-4xl">{instructor.name}</h3>
             {instructor.title && (
-              <p className="mt-1 font-medium text-pink-500">
-                {instructor.title}
-              </p>
+              <p className="mt-1 font-medium text-pink-500">{instructor.title}</p>
             )}
             {instructor.experience && (
-              <p className="mt-1 text-sm text-neutral-400">
-                {instructor.experience}
-              </p>
+              <p className="mt-1 text-sm text-neutral-400">{instructor.experience}</p>
             )}
 
             <div className="mt-4 text-sm leading-relaxed text-neutral-600 [&_p]:mb-4 [&_p]:leading-relaxed md:text-base">

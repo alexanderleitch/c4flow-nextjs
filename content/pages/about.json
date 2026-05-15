@@ -1,0 +1,395 @@
+{
+  "slug": "about",
+  "title": "About Us | C4 Flow",
+  "seoTitle": "About Us",
+  "seoDescription": "Learn about C-4 Flow, our instructor, Cattleya, and our inclusive pole and exotic dance studio in Woodstock, Cape Town.",
+  "ogImageUrl": null,
+  "sections": [
+    {
+      "_key": "hero",
+      "_type": "hero",
+      "backgroundImage": {
+        "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQDBQj/xAAcEAACAgIDAAAAAAAAAAAAAAAAAQIRAyEEE1H/xAAWAQEBAQAAAAAAAAAAAAAAAAADAgX/xAAZEQEBAAMBAAAAAAAAAAAAAAABAAIDExH/2gAMAwEAAhEDEQA/ANA5OVbCGeyvskg9Am/L23HUBP8AevQEG9gL3aeRf//Z",
+        "url": "https://cdn.sanity.io/images/ik9ho36m/production/58684679b050e0ad40d5c833cab3a8b120d1981d-1920x1080.jpg"
+      },
+      "body": [
+        {
+          "_key": "d76b1425f861",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "334b75f0af12",
+              "_type": "span",
+              "marks": [],
+              "text": "At C-4 Flow, our mission is to create an inclusive, affirming space where people of all races, genders, body types, abilities, and experience levels feel welcome to explore movement as a form of self-expression. We are committed to fostering confidence, empowerment, and body autonomy through pole and exotic dance, while honoring individuality and celebrating diversity in all its forms."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "headline": "Our Mission",
+      "image": null,
+      "images": null,
+      "instructor": null,
+      "layout": "gradient",
+      "overlayLogo": null,
+      "subtitle": "Our Story"
+    },
+    {
+      "_key": "story",
+      "_type": "richTextSection",
+      "backgroundImage": null,
+      "content": [
+        {
+          "_key": "p1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "p1s1",
+              "_type": "span",
+              "marks": [],
+              "text": "C-4 Flow is a welcoming, beginner-friendly pole and exotic dance studio centered on movement as self-expression. Our classes help you build strength, flexibility, and confidence while reconnecting with your body. You might come to train athletically, explore sensual movement, or simply move in a way that feels good."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "badbeb49551e",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "p1s1",
+              "_type": "span",
+              "marks": [],
+              "text": "We believe dance is about more than tricks or choreography. It's about expression, emotion, and empowerment. At C-4 Flow, you're invited to show up as you are and move in ways that feel authentic to you: powerful, playful, seductive, soft, or bold."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "p3",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "p3s1",
+              "_type": "span",
+              "marks": [],
+              "text": "Our studio is a supportive, judgment-free space built around community. From your very first class through every step of your pole journey, you'll find encouragement, respect, and room to grow at your own pace."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "p4",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "p4s1",
+              "_type": "span",
+              "marks": [],
+              "text": "Have questions? Check out our "
+            },
+            {
+              "_key": "p4s2",
+              "_type": "span",
+              "marks": [
+                "faqlink"
+              ],
+              "text": "FAQs"
+            },
+            {
+              "_key": "p4s3",
+              "_type": "span",
+              "marks": [],
+              "text": " or "
+            },
+            {
+              "_key": "p4s4",
+              "_type": "span",
+              "marks": [
+                "contactlink"
+              ],
+              "text": "get in touch"
+            },
+            {
+              "_key": "p4s5",
+              "_type": "span",
+              "marks": [],
+              "text": ". We'd love to hear from you."
+            }
+          ],
+          "markDefs": [
+            {
+              "_key": "faqlink",
+              "_type": "link",
+              "href": "/about#faqs"
+            },
+            {
+              "_key": "contactlink",
+              "_type": "link",
+              "href": "/contact"
+            }
+          ],
+          "style": "normal"
+        }
+      ],
+      "heading": "Get to Know Us",
+      "image": {
+        "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAeABQDASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAAAAYEBQcCA//EACUQAAEEAgEDBAMAAAAAAAAAAAECAwQFABESITFxEyJBYQYUFf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDQrW/gojlmQ+6g7CVcO4OSqr+JMi6mqDp5Ahbh661mZfryHbBEq0krajO7KkKRog/WTlPR0uuxKVaXXEp9XROyk67ePrAarSHWMznBE0Wle4EKwxHYt5jDQRNhuOvjuplr24YFN+UVT9jbtmwnyFsJPFngerg8fGcyZcqmvYaaZrTh0HFvp0fHjK14yaxiChLvqvyDoOLJPDZ+MaHEvQICn7VaZkhCTxcA0dYHrLr7iW+p82LcQr6lpCwQMMQp98l1/mwyUIIHRR64YH//2Q==",
+        "url": "https://cdn.sanity.io/images/ik9ho36m/production/7e9f0b54b4471fb2134c42c81a6d05966801ea7d-1024x1538.jpg"
+      },
+      "imagePosition": "right",
+      "images": null,
+      "instructor": null,
+      "layout": "textImage",
+      "overlayLogo": null
+    },
+    {
+      "_key": "instructor",
+      "_type": "instructorSection",
+      "backgroundImage": null,
+      "heading": "Meet Your Instructor",
+      "image": null,
+      "images": null,
+      "instructor": {
+        "bio": [
+          {
+            "_key": "bio1",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "bio1s",
+                "_type": "span",
+                "marks": [],
+                "text": "Cattleya is an international performer from Eastern Europe with over 10 years of experience. Her background includes hip hop, disco dance, ballet, stage performance, burlesque, fire spinning, pole dance, and aerial arts."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "bio2",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "bio2s",
+                "_type": "span",
+                "marks": [],
+                "text": "Driven by a constant desire to grow, she continues to refine her skills while exploring new techniques and styles. One thing has always remained clear: dance is her life."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "bio3",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "bio3s",
+                "_type": "span",
+                "marks": [],
+                "text": "With four years of teaching experience, primarily through one-on-one sessions, Cattleya has developed a flexible, student-focused approach. She believes a teacher is only as good as their students, and her work has always centered on supporting and uplifting them."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "bio4",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "bio4s",
+                "_type": "span",
+                "marks": [],
+                "text": "Dance shaped her in a unique and personal way, helping her become the best version of herself; sharing that journey with others came naturally. She is passionate about creating a space where students feel happy, empowered, and leave each class feeling stronger than before. Dance has been part of her life since childhood. It was her escape, her guidance, and her learning ground, shaping her values and sense of self. Today, it remains her daily therapy and the place where she can truly be herself."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "experience": "Over 10 years of dance experience",
+        "name": "Cattleya",
+        "photoLqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQDBQYH/8QAJhAAAgICAgAFBQEAAAAAAAAAAQIDBAARBSEGEyMxQgcSIjJRQf/EABYBAQEBAAAAAAAAAAAAAAAAAAMCAf/EABwRAAMAAgMBAAAAAAAAAAAAAAABEQISAyEiUf/aAAwDAQACEQMRAD8A5FY5nkePZa9azIkQHSqxAx6p4/8AEVEeVHfcddKw31inM0FbnkrCZAn278wdgDJeX4uK1bEcFuN5YIuwB+2DUomXptYWEf1R8RRoFaaJyPkyd4Zk46Wl9WvMX/qnrDL1x+BQdl5VF4uvLCgE6ygOzDfX8w5u9ZtFL0XloD16Y0SMr7jIaLqqa/3FjyKmkkJi/Jflv3zMse0xOPLy1TQJadlDbGyNnvDKxZ3Cgg62N+2GHBKf/9k=",
+        "photoUrl": "https://cdn.sanity.io/images/ik9ho36m/production/5acea2b1c2b212050902ba967becf26e5e5c589a-1024x1539.jpg",
+        "title": "Lead Instructor & Studio Director"
+      },
+      "overlayLogo": null
+    },
+    {
+      "_key": "gallery",
+      "_type": "gallerySection",
+      "backgroundImage": null,
+      "heading": "Our Space",
+      "image": null,
+      "images": [
+        {
+          "_key": "g3",
+          "_type": "image",
+          "alt": "Studio panoramic view",
+          "asset": {
+            "metadata": {
+              "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAUGBwP/xAAkEAACAgIBAwQDAAAAAAAAAAABAgMEABEFBhIhExQicTFRYf/EABcBAAMBAAAAAAAAAAAAAAAAAAEDBAL/xAAcEQACAgIDAAAAAAAAAAAAAAAAAQIRE0EDIYH/2gAMAwEAAhEDEQA/AJ/mupZ+Ngj48LHyFpz8u0aH1kjX6l48cfFDeoJFM2gO/wAEHM/5luUgFT21Za9pn7nlmbZH8+86Vbj2L9qjcryXLIAdJtaVT+sgfHRfKcXBRS92bZT6ioz11b1ljI8FW/I1jMYhqtEGFs7mLEn0zsYw5GLwJ92U61yVx6AvS2JJLMkiqWc719DLFaty1+EjmBDzOCGkcfI4xmmDZXnuzkI3f5ZQTrGMYBzSs//Z"
+            },
+            "url": "https://cdn.sanity.io/images/ik9ho36m/production/2d7faad6674d19e6b0d78da2376568226ff85872-768x768.jpg"
+          }
+        },
+        {
+          "_key": "g6",
+          "_type": "image",
+          "alt": "Training area",
+          "asset": {
+            "metadata": {
+              "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAcFCAT/xAAlEAACAQQBBAEFAAAAAAAAAAABAgMABAUREgYhIjFBBxNCYXH/xAAXAQADAQAAAAAAAAAAAAAAAAABAgME/8QAGxEAAgMAAwAAAAAAAAAAAAAAAAECETEDMlH/2gAMAwEAAhEDEQA/AOgHnEUZZ2CqBsk/FZ8GcsLyYw213FJIPxVqxutLqNsHdW6XqW8rITvffj86qH9M5q4wmR1An3YUl4lpT5MCfY/VYr8LqFq2dETcjISD2pXjt72KaBJA48gD7pTE6ZMvqCms7jJQzbVW8d9j/RUq60dmz0LoxiMuuQj7ClKHHqKS6MsvS0fDCW6lnfQ9udmlKUr0VYf/2Q=="
+            },
+            "url": "https://cdn.sanity.io/images/ik9ho36m/production/7179cb994651f66f60984ef0e53d7e11481e43ab-768x768.jpg"
+          }
+        },
+        {
+          "_key": "g4",
+          "_type": "image",
+          "alt": "Dance studio space",
+          "asset": {
+            "metadata": {
+              "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAYDBf/EACUQAAEEAgAGAgMAAAAAAAAAAAEAAgMEBREGEhQhMUEWcSIyUf/EABYBAQEBAAAAAAAAAAAAAAAAAAQFBv/EAB4RAAICAgIDAAAAAAAAAAAAAAABAhETMQMhBRIj/9oADAMBAAIRAxEAPwC9rW7Hx6v0ETH2tbETvx7fSmpBeq5+DI5VzazS7XKHAghb5DiqvTuxtjhlmsFpA5Y+2/4oC5fy9/Ny3bjp4Ige0bmbaG+/pBlD1dDI7L/Kce4+rbdG6OUkDyPaKCuYevmZusq3mthcNAcvjSIbk72ang4PFY45Luu9nUoVI73FGMdYc8mPbwA7Q2q/iyrC7H92/s8NOvYPkIipRXzZjW3kiRsNeGsHQ142xRNcQGt8BERSnstrpH//2Q=="
+            },
+            "url": "https://cdn.sanity.io/images/ik9ho36m/production/7eb2fa577700016e086a922f6efbc21b8acb9783-768x768.jpg"
+          }
+        },
+        {
+          "_key": "g1",
+          "_type": "image",
+          "alt": "C4 Flow studio interior",
+          "asset": {
+            "metadata": {
+              "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAYHAwX/xAAmEAABAwQBAwQDAAAAAAAAAAACAQMEAAUREgYHIjETITJBUWFx/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ALRm7McgsxMW1VdV9FQXSDAoqflKlbpx6Rb2QdlXCJETZB20TzUX02u10Zu0WGDo+hvsQOl7L/P3V91EijNgFDFNn3MuCiL8cfdBwl3Z+ATccJgEggncgeaVEwOQz2ojbT9ubkm2miuJ94pQepxGywn7pHF1slES2RNsYWtK5JGatjAPxhybgqBb92UxSlBjjjKE6aiZgikvaC4RKUpQf//Z"
+            },
+            "url": "https://cdn.sanity.io/images/ik9ho36m/production/115cf4f9f393a60fefaef0487030beeee5ed3ec2-768x768.jpg"
+          }
+        },
+        {
+          "_key": "g5",
+          "_type": "image",
+          "alt": "Studio lighting and mirrors",
+          "asset": {
+            "metadata": {
+              "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAIFBwP/xAAmEAACAQQBAwMFAAAAAAAAAAABAgMABAURIQYSMQcUIiNBUWFx/8QAGAEAAwEBAAAAAAAAAAAAAAAAAQIEAwX/xAAdEQACAgIDAQAAAAAAAAAAAAAAAQIRElEDITFh/9oADAMBAAIRAxEAPwC69W7RHsLYMByj6/uqyO1nu3xUoha3eONO1wDyK1HrS5usvFMPpsLcMqxKNk7XfmsjtpbpIZo7e0VYBGRIX4PP6rmruyvBVT9oli/eyWatCIRGSdAildMJII8dGrEAjf3pTuasxXHLRaZbqnJwZAxQSpGBPruVeSPxVRkJZH6hCM7dsvLUpRpJdaZTB378JJg7VixLzj5Hw9KUpMnsOMdH/9k="
+            },
+            "url": "https://cdn.sanity.io/images/ik9ho36m/production/6af4a7fe2d65a0bc41cca76c616048e0ecfe4840-768x768.jpg"
+          }
+        },
+        {
+          "_key": "g2",
+          "_type": "image",
+          "alt": "Pole dance studio equipment",
+          "asset": {
+            "metadata": {
+              "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABQDASIAAhEBAxEB/8QAGQABAAIDAAAAAAAAAAAAAAAAAAMGAgQF/8QAJxAAAQQBBAECBwAAAAAAAAAAAQIDBAUABhESIRMWMSIyQVFhccH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AnmW0qztDFityQlauTZHtsP5ndYuJ9QwpMp4IWkg7J7+ED3yj31xNZnNQ6CtU2W+nStXaTmyi3Fdcteo31KbkI4BrbfiD9cC0tahTatiV5yrl1upPEnb8Yyn2T1cZi/DWvy2x8rraiAR9sYE0p9Uq1iJdSkcySspGxV+zjUlbGY1JH4pJ4gKHI77YxgYPakmMrLbbcZKE9ABvGMYH/9k="
+            },
+            "url": "https://cdn.sanity.io/images/ik9ho36m/production/b36856352bfc489653a6b6323cf57619bb640aed-768x768.jpg"
+          }
+        }
+      ],
+      "instructor": null,
+      "overlayLogo": null,
+      "subtitle": "Step into our bright, beautiful, empowering studio."
+    },
+    {
+      "_key": "cta-about",
+      "_type": "ctaSection",
+      "backgroundImage": {
+        "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQDBQj/xAAcEAACAgIDAAAAAAAAAAAAAAAAAQIRAyEEE1H/xAAWAQEBAQAAAAAAAAAAAAAAAAADAgX/xAAZEQEBAAMBAAAAAAAAAAAAAAABAAIDExH/2gAMAwEAAhEDEQA/ANA5OVbCGeyvskg9Am/L23HUBP8AevQEG9gL3aeRf//Z",
+        "url": "https://cdn.sanity.io/images/ik9ho36m/production/58684679b050e0ad40d5c833cab3a8b120d1981d-1920x1080.jpg"
+      },
+      "buttonText": "Book a Class",
+      "buttonUrl": "https://movetoexpresswithc4flow.setmore.com/",
+      "heading": "Ready to begin?",
+      "image": null,
+      "images": null,
+      "instructor": null,
+      "overlayLogo": null,
+      "style": "bgImage",
+      "subtitle": [
+        {
+          "_key": "733f4db9cab4",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "6eff9e19fd3c",
+              "_type": "span",
+              "marks": [],
+              "text": "Book a class now and move to express."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ]
+    },
+    {
+      "_key": "faqs",
+      "_type": "faqSection",
+      "backgroundImage": null,
+      "faqs": [
+        {
+          "_key": "faq1",
+          "_type": "faq",
+          "answer": "Wear fitted, comfortable workout attire that allows for plenty of skin contact—such as shorts with a sports bra or tank—to ensure a secure grip on the pole. DO NOT apply lotions or oils before class; they make the pole slippery and can endanger anyone using it. Remember to bring your water bottle!",
+          "question": "What should I wear to class?"
+        },
+        {
+          "_key": "faq2",
+          "_type": "faq",
+          "answer": "Pole shoes can be worn in all classes, but going barefoot is often more comfortable when learning new tricks. For Exotic Baddies and Heels & Queens, heels and knee pads are recommended—though beginners are always welcome to dance barefoot. For Heels & Queens, any comfortable heels are fine if you don't have pole shoes yet. Please bring a water bottle and a small towel; pole grip and a yoga mat, if you have them. Absolute beginners only need water and a towel to get started!",
+          "question": "What should I bring with me to class?"
+        },
+        {
+          "_key": "faq3",
+          "_type": "faq",
+          "answer": "Your first class will focus on learning the basics in a supportive, judgment-free environment. You can expect a guided warm-up, an introduction to foundational moves, and time to practice at your own pace. No experience is required—just come ready to move, learn, and have fun.",
+          "question": "What should I expect in my first session?"
+        },
+        {
+          "_key": "faq4",
+          "_type": "faq",
+          "answer": "We require cancellations to be made at least 24 hours before class to avoid losing your credit. Late cancellations or no-shows are non-refundable, as they prevent others from taking your spot. We do not offer cash refunds, but are happy to reschedule with advance notice.",
+          "question": "What's your cancellation policy?"
+        },
+        {
+          "_key": "faq5",
+          "_type": "faq",
+          "answer": "No! We are beginner-friendly and are excited to welcome you to the studio and introduce you to this athletic artform we adore. We hope you love it as much as we do!",
+          "question": "Do I need any prior experience?"
+        },
+        {
+          "_key": "faq6",
+          "_type": "faq",
+          "answer": "Yes! Free street parking is available, and there is additional paid garage parking nearby for your convenience. We recommend arriving a few minutes early to allow time to park and settle in.",
+          "question": "Is there parking available?"
+        }
+      ],
+      "heading": "Frequently Asked Questions",
+      "image": null,
+      "images": null,
+      "instructor": null,
+      "overlayLogo": null
+    },
+    {
+      "_key": "testimonials-1",
+      "_type": "testimonialsSection",
+      "backgroundImage": null,
+      "heading": "What Our Students Say",
+      "image": null,
+      "images": null,
+      "instructor": null,
+      "overlayLogo": null,
+      "subtitle": "Real stories from real dancers — hear what our community has to say about the C4 Flow experience."
+    }
+  ]
+}

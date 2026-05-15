@@ -1,0 +1,880 @@
+{
+  "generatedAt": "2026-05-14T23:58:14.707689+00:00",
+  "site": {
+    "name": "C4 Flow",
+    "tagline": "Pole & Exotic Dance Studio",
+    "motto": "Move to Express",
+    "url": "https://www.c4flow.co.za",
+    "email": "info@c4flow.co.za",
+    "phone": "+27 725884371",
+    "whatsappNumber": "27725884371",
+    "whatsappMessage": "Hey, I'm interested in booking a class with you!",
+    "bookingUrl": "https://wa.me/27725884371?text=Hey%2C%20I%27m%20interested%20in%20booking%20a%20class%20with%20you!",
+    "instagramUrl": "https://www.instagram.com/c_4_flow/",
+    "instructorInstagramUrl": "https://www.instagram.com/cattleya_mystic_muse/",
+    "mapsUrl": "https://www.google.com/maps/place/Woodstock+Exchange/@-33.926702,18.4434095,17z/",
+    "logoUrl": "https://cdn.sanity.io/images/ik9ho36m/production/ec23f5e75984a9c7334f051457fee23f3c6eb339-375x391.png",
+    "defaultOgImageUrl": null,
+    "primaryInstructor": {
+      "name": "Cattleya",
+      "title": "Lead Instructor & Studio Director",
+      "instagramUrl": "https://www.instagram.com/cattleya_mystic_muse/",
+      "photoUrl": "https://cdn.sanity.io/images/ik9ho36m/production/5acea2b1c2b212050902ba967becf26e5e5c589a-1024x1539.jpg",
+      "photoLqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQDBQYH/8QAJhAAAgICAgAFBQEAAAAAAAAAAQIDBAARBSEGEyMxQgcSIjJRQf/EABYBAQEBAAAAAAAAAAAAAAAAAAMCAf/EABwRAAMAAgMBAAAAAAAAAAAAAAABEQISAyEiUf/aAAwDAQACEQMRAD8A5FY5nkePZa9azIkQHSqxAx6p4/8AEVEeVHfcddKw31inM0FbnkrCZAn278wdgDJeX4uK1bEcFuN5YIuwB+2DUomXptYWEf1R8RRoFaaJyPkyd4Zk46Wl9WvMX/qnrDL1x+BQdl5VF4uvLCgE6ygOzDfX8w5u9ZtFL0XloD16Y0SMr7jIaLqqa/3FjyKmkkJi/Jflv3zMse0xOPLy1TQJadlDbGyNnvDKxZ3Cgg62N+2GHBKf/9k=",
+      "experience": "Over 10 years of dance experience",
+      "bio": [
+        {
+          "_key": "bio1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "bio1s",
+              "_type": "span",
+              "marks": [],
+              "text": "Cattleya is an international performer from Eastern Europe with over 10 years of experience. Her background includes hip hop, disco dance, ballet, stage performance, burlesque, fire spinning, pole dance, and aerial arts."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "bio2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "bio2s",
+              "_type": "span",
+              "marks": [],
+              "text": "Driven by a constant desire to grow, she continues to refine her skills while exploring new techniques and styles. One thing has always remained clear: dance is her life."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "bio3",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "bio3s",
+              "_type": "span",
+              "marks": [],
+              "text": "With four years of teaching experience, primarily through one-on-one sessions, Cattleya has developed a flexible, student-focused approach. She believes a teacher is only as good as their students, and her work has always centered on supporting and uplifting them."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "bio4",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "bio4s",
+              "_type": "span",
+              "marks": [],
+              "text": "Dance shaped her in a unique and personal way, helping her become the best version of herself; sharing that journey with others came naturally. She is passionate about creating a space where students feel happy, empowered, and leave each class feeling stronger than before. Dance has been part of her life since childhood. It was her escape, her guidance, and her learning ground, shaping her values and sense of self. Today, it remains her daily therapy and the place where she can truly be herself."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ]
+    },
+    "address": {
+      "building": "Woodstock Exchange",
+      "street": "66 Albert Road",
+      "city": "Cape Town",
+      "province": "Western Cape",
+      "postalCode": "8001",
+      "country": "South Africa"
+    },
+    "geo": {
+      "latitude": -33.926702,
+      "longitude": 18.4434095
+    }
+  },
+  "pages": [
+    {
+      "title": "About Us | C4 Flow",
+      "slug": "about",
+      "url": "https://www.c4flow.co.za/about",
+      "description": "Learn about C-4 Flow, our instructor, Cattleya, and our inclusive pole and exotic dance studio in Woodstock, Cape Town.",
+      "sectionTypes": [
+        "hero",
+        "richTextSection",
+        "instructorSection",
+        "gallerySection",
+        "ctaSection",
+        "faqSection",
+        "testimonialsSection"
+      ]
+    },
+    {
+      "title": "Classes",
+      "slug": "classes",
+      "url": "https://www.c4flow.co.za/classes",
+      "description": "Learn more about our classes. From pole tricks to exotic flow and floorwork, C-4 Flow Pole Studio offers group and private classes for all levels in Cape Town.",
+      "sectionTypes": [
+        "hero",
+        "classesSection",
+        "pricingSection",
+        "pricingSection",
+        "classDetailsSection",
+        "scheduleSection",
+        "ctaSection"
+      ]
+    },
+    {
+      "title": "C4 Flow | Contact",
+      "slug": "contact",
+      "url": "https://www.c4flow.co.za/contact",
+      "description": "Get in touch with C-4 Flow. Send us a message, find us on the map, or reach out via WhatsApp.",
+      "sectionTypes": [
+        "hero",
+        "contactInfoSection",
+        "contactFormSection",
+        "mapSection"
+      ]
+    },
+    {
+      "title": "C-4 Flow",
+      "slug": "home",
+      "url": "https://www.c4flow.co.za",
+      "description": "C4 Flow Studio offers pole dancing classes Cape Town loves — group and private classes for all levels at our inclusive Woodstock studio.",
+      "sectionTypes": [
+        "hero",
+        "featureGrid",
+        "classesSection",
+        "scheduleSection",
+        "instructorSection",
+        "ctaSection"
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "id": "8bbd5167-5ade-4056-bd14-bb7d0da29779",
+      "name": "Free Play",
+      "slug": "free-play",
+      "url": "https://www.c4flow.co.za/classes/free-play",
+      "shortDescription": "An open class to play as you like, practice flows and pole tricks.",
+      "descriptionText": "This is your time to explore, experiment, and make the space your own. Free play is an open session where you can practice what you’ve been working on, try new tricks, or flow at your own pace. There’s no structured teaching—just music, poles, and room to move however you like. Whether you’re refining skills or just vibing out, it’s a laid-back environment to build confidence and get comfortable in your own style.",
+      "descriptionBlocks": [
+        {
+          "_key": "53623eaa9239",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "2f1552506bec",
+              "_type": "span",
+              "marks": [],
+              "text": "This is your time to explore, experiment, and make the space your own. Free play is an open session where you can practice what you’ve been working on, try new tricks, or flow at your own pace. There’s no structured teaching—just music, poles, and room to move however you like. Whether you’re refining skills or just vibing out, it’s a laid-back environment to build confidence and get comfortable in your own style."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "summary": "An open class to play as you like, practice flows and pole tricks.",
+      "tagline": "Practice, play, experiment",
+      "category": "group",
+      "days": null,
+      "daysSummary": "Mon",
+      "durationMinutes": 60,
+      "imageUrl": "https://cdn.sanity.io/images/ik9ho36m/production/ce00c85173a38c79013c9f0e630441eb0c09b4a2-2123x1413.jpg",
+      "imageAlt": "Free Play",
+      "imageLqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUDBAb/xAAfEAABBAIDAQEAAAAAAAAAAAABAgMEBQARBhIhMWH/xAAWAQEBAQAAAAAAAAAAAAAAAAAEAAL/xAAgEQEAAgAFBQAAAAAAAAAAAAABAAIDBBEUMQUSQWHw/9oADAMBAAIRAxEAPwCW1vYNNBRCjtiS6SAmOTvqvf04j5xdWVa6wrs6wytPbq2fN40jMIPNZjCwFIAUrZHuWue1DcqqhpfcUoJ98Gt4O2F3KvEZl85t7lqAqeTXmKKi+uF1zKjGcc2N91D1X7hmvrYiG6+MlPwNgYZbZmb9QraytDX73P/Z",
+      "bookingUrl": "https://wa.me/27725884371?text=Hey%2C%20I%27m%20interested%20in%20booking%20the%20Free%20Play%20class%20with%20you%21",
+      "priceCurrency": "ZAR",
+      "offerValidFrom": "2026-05-14T23:58:14.707689+00:00",
+      "listPrice": 0,
+      "currentPrice": 0,
+      "salePrice": null,
+      "hasDiscount": false,
+      "discountLabel": null,
+      "schedule": [
+        {
+          "day": "Monday",
+          "time": "7:15 PM",
+          "startTime24": "19:15",
+          "endTime24": "20:15",
+          "nextOccurrenceIso": "2026-05-18T19:15:00+02:00",
+          "bookingUrl": "https://wa.me/27725884371?text=Hey%2C%20I%27m%20interested%20in%20booking%20the%20Free%20Play%20class%20with%20you%21"
+        }
+      ]
+    },
+    {
+      "id": "class-exotic-baddies",
+      "name": "Exotic Baddies",
+      "slug": "exotic-baddies",
+      "url": "https://www.c4flow.co.za/classes/exotic-baddies",
+      "shortDescription": "This class is for goddesses eager to learn seductive, sexy, expressive techniques. Expect dance choreography that's a little challenging and a lot of fun.",
+      "descriptionText": "This class is for goddesses eager to learn seductive, sexy, expressive techniques. Expect dance choreography that's a little challenging and a lot of fun.\n\nGet ready to step out of your shell and explore confidence through freedom of movement and self-expression.\n\nLearn exciting tricks and low pole flow—sensual or dynamic. Always in heels, always ready to slay, like a true Queen of Exotic Baddies.\n\nThink choreography that sets your mode to rock: fearless, sexy, and unapologetic.",
+      "descriptionBlocks": [
+        {
+          "_key": "eb1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "eb1s",
+              "_type": "span",
+              "marks": [],
+              "text": "This class is for goddesses eager to learn seductive, sexy, expressive techniques. Expect dance choreography that's a little challenging and a lot of fun."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "eb2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "eb2s",
+              "_type": "span",
+              "marks": [],
+              "text": "Get ready to step out of your shell and explore confidence through freedom of movement and self-expression."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "eb3",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "eb3s",
+              "_type": "span",
+              "marks": [],
+              "text": "Learn exciting tricks and low pole flow—sensual or dynamic. Always in heels, always ready to slay, like a true Queen of Exotic Baddies."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "eb4",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "eb4s",
+              "_type": "span",
+              "marks": [],
+              "text": "Think choreography that sets your mode to rock: fearless, sexy, and unapologetic."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "summary": "This class is for goddesses eager to learn seductive, sexy, expressive techniques. Expect dance choreography that's a little challenging and a lot of fun.",
+      "tagline": "Static pole & dance choreography",
+      "category": "group",
+      "days": "Mon & Fri",
+      "daysSummary": "Wed",
+      "durationMinutes": 60,
+      "imageUrl": "https://cdn.sanity.io/images/ik9ho36m/production/9929056fec895ca9d31bd8b44f3f8ef166eec2cf-768x1153.jpg",
+      "imageAlt": "Exotic Baddies",
+      "imageLqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAeABQDASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAAAAUDBgcBAv/EACYQAAEEAgIBAwUBAAAAAAAAAAECAwQRAAUGITESI0EUIjNSYXH/xAAYAQADAQEAAAAAAAAAAAAAAAABAwUAAv/EABwRAAMAAgMBAAAAAAAAAAAAAAABAhESAxNRIf/aAAwDAQACEQMRAD8Ad6TlM86FwygkNyLShKOu/wBsi4vLkN8iYU5IdkNt2XbVYHXVZVeWyW3Njr2tbKSVJc6Qk/ae/GenES43J4qY8n0qU8C6gGkEfI/3JtZlpFLWORVa+eI2mLybXSGQtx36dVkFt3pQwzM9zFizJ63nQtaj1aVUMMYqYjpXgq00bV8gS5IhBTDWvcBTZvxkXIXYcpz2U+pK1+sKZNG/6crcXWO6qHKMKU4GX/yJJq7zinENNrCAr2EAmz5w0ppKkwzvGYwOhL1CehIcFeQb6wxFreSsqipuCgEEj4OGc60jbo//2Q==",
+      "bookingUrl": "https://wa.me/27725884371?text=Hey%2C%20I%27m%20interested%20in%20booking%20the%20Exotic%20Baddies%20class%20with%20you%21",
+      "priceCurrency": "ZAR",
+      "offerValidFrom": "2026-05-14T23:58:14.707689+00:00",
+      "listPrice": 200,
+      "currentPrice": 200,
+      "salePrice": null,
+      "hasDiscount": false,
+      "discountLabel": null,
+      "schedule": [
+        {
+          "day": "Wednesday",
+          "time": "7 PM",
+          "startTime24": "19:00",
+          "endTime24": "20:00",
+          "nextOccurrenceIso": "2026-05-20T19:00:00+02:00",
+          "bookingUrl": "https://wa.me/27725884371?text=Hey%2C%20I%27m%20interested%20in%20booking%20the%20Exotic%20Baddies%20class%20with%20you%21"
+        }
+      ]
+    },
+    {
+      "id": "class-dynamic-static",
+      "name": "Dynamic Static",
+      "slug": "dynamic-static",
+      "url": "https://www.c4flow.co.za/classes/dynamic-static",
+      "shortDescription": "Do you consider yourself strong, playful, and athletic? This style is all about defying gravity with bold dynamics and unapologetic confidence.",
+      "descriptionText": "Do you consider yourself strong, playful, and athletic?\n\nThis style is all about defying gravity. Expect high energy, bold dynamics, and unapologetic confidence.\n\nIf that sounds awesome, give it a try. No matter your current skill level, we've got you every step of the way. What matters most is your courage, commitment, and determination.\n\nThink jumps, flips, drops, cartwheels, kicks, and nonstop dynamic movement—power all the way.",
+      "descriptionBlocks": [
+        {
+          "_key": "ds1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "ds1s",
+              "_type": "span",
+              "marks": [],
+              "text": "Do you consider yourself strong, playful, and athletic?"
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "ds2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "ds2s",
+              "_type": "span",
+              "marks": [],
+              "text": "This style is all about defying gravity. Expect high energy, bold dynamics, and unapologetic confidence."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "ds3",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "ds3s",
+              "_type": "span",
+              "marks": [],
+              "text": "If that sounds awesome, give it a try. No matter your current skill level, we've got you every step of the way. What matters most is your courage, commitment, and determination."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "ds4",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "ds4s",
+              "_type": "span",
+              "marks": [],
+              "text": "Think jumps, flips, drops, cartwheels, kicks, and nonstop dynamic movement—power all the way."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "summary": "Do you consider yourself strong, playful, and athletic? This style is all about defying gravity with bold dynamics and unapologetic confidence.",
+      "tagline": "Static pole & all the tricks",
+      "category": "group",
+      "days": "Tues",
+      "daysSummary": "Tue",
+      "durationMinutes": 60,
+      "imageUrl": "https://cdn.sanity.io/images/ik9ho36m/production/fdf5c0a5aacedb9d3066eae7c3f5882e540737d4-768x1154.jpg",
+      "imageAlt": "Dynamic Static",
+      "imageLqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAUHAwb/xAAjEAACAQQCAgIDAAAAAAAAAAABAgMABAUREiEGMRNBFVFx/8QAGAEAAwEBAAAAAAAAAAAAAAAAAAQFAgP/xAAdEQADAAICAwAAAAAAAAAAAAAAAQIRUQMSFCEi/9oADAMBAAIRAxEAPwCQWNkJB2NimseIeQ8V3qtI447XHm42RsHQApn4XdtcRcpj0reyPqjljosjEtP0J28amLEhGI/lFXLHz4ZbRBI8Zb7oqd5FaNYnRB73I2j434oZ9soIAK+608ZzMEcDW054EknYHuuUWFgoJbqhlXkNFg37qryJ3P0LRbTK3D+CMal8ldK2uxxHVFTC2yUnxAMAxHWzRXDoGXs//9k=",
+      "bookingUrl": "https://wa.me/27725884371?text=Hey%2C%20I%27m%20interested%20in%20booking%20the%20Dynamic%20Static%20class%20with%20you%21",
+      "priceCurrency": "ZAR",
+      "offerValidFrom": "2026-05-14T23:58:14.707689+00:00",
+      "listPrice": 200,
+      "currentPrice": 200,
+      "salePrice": null,
+      "hasDiscount": false,
+      "discountLabel": null,
+      "schedule": [
+        {
+          "day": "Tuesday",
+          "time": "5:45 PM",
+          "startTime24": "17:45",
+          "endTime24": "18:45",
+          "nextOccurrenceIso": "2026-05-19T17:45:00+02:00",
+          "bookingUrl": "https://wa.me/27725884371?text=Hey%2C%20I%27m%20interested%20in%20booking%20the%20Dynamic%20Static%20class%20with%20you%21"
+        }
+      ]
+    },
+    {
+      "id": "class-spinning-goddess",
+      "name": "Spinning Goddess",
+      "slug": "spinning-goddess",
+      "url": "https://www.c4flow.co.za/classes/spinning-goddess",
+      "shortDescription": "Want to dance like a smooth, effortless pro? From tricks and transitions to stamina and tiny technique details, we break it down in a positive space.",
+      "descriptionText": "Want to dance like a smooth, effortless pro? We've got you.\n\nFrom tricks and transitions to stamina and tiny technique details, we break it down in a positive, encouraging space.\n\nWith our Spinning Goddess technique, the possibilities are endless… and yes, it can get dizzy. ✨💃",
+      "descriptionBlocks": [
+        {
+          "_key": "sg1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "sg1s",
+              "_type": "span",
+              "marks": [],
+              "text": "Want to dance like a smooth, effortless pro? We've got you."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "sg2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "sg2s",
+              "_type": "span",
+              "marks": [],
+              "text": "From tricks and transitions to stamina and tiny technique details, we break it down in a positive, encouraging space."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "sg3",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "sg3s",
+              "_type": "span",
+              "marks": [],
+              "text": "With our Spinning Goddess technique, the possibilities are endless… and yes, it can get dizzy. ✨💃"
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "summary": "Want to dance like a smooth, effortless pro? From tricks and transitions to stamina and tiny technique details, we break it down in a positive space.",
+      "tagline": "Spinning pole, tricks & transitions",
+      "category": "group",
+      "days": "Mon, Tues & Thurs",
+      "daysSummary": "Wed & Thu",
+      "durationMinutes": 60,
+      "imageUrl": "https://cdn.sanity.io/images/ik9ho36m/production/a6375a5ed195e6b3d6bec8d5d2f6f42601985680-768x1109.jpg",
+      "imageAlt": "Spinning Goddess",
+      "imageLqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAdABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAUHAwb/xAAkEAABBAIBBAIDAAAAAAAAAAABAAIDEQQFEgYTIWEUUSJBgf/EABcBAAMBAAAAAAAAAAAAAAAAAAADBAL/xAAeEQACAQQDAQAAAAAAAAAAAAAAAQIDBBESFCFRQf/aAAwDAQACEQMRAD8A6LU6IyAEtTiLRCV0rAzyw0kWo6kyu22ntH8WmR1LkYZzMiOa530Gt/RNeFRUvtfgmlYuTwMJdC5ryOJQpxr+t+ocyOSXJjnMnccPxbQr0hLd4/BitF6LdLtmENEktD0m2PtIPkzP8cW0ACbU4fL8bBhljaOXIX7WjcuV8nFp4tkIsBTSp7dlMa2qwigS76NjyGcQPoIXMHEhNW03X2hHHkZ5KP/Z",
+      "bookingUrl": "https://wa.me/27725884371?text=Hey%2C%20I%27m%20interested%20in%20booking%20the%20Spinning%20Goddess%20class%20with%20you%21",
+      "priceCurrency": "ZAR",
+      "offerValidFrom": "2026-05-14T23:58:14.707689+00:00",
+      "listPrice": 200,
+      "currentPrice": 200,
+      "salePrice": null,
+      "hasDiscount": false,
+      "discountLabel": null,
+      "schedule": [
+        {
+          "day": "Wednesday",
+          "time": "7 PM",
+          "startTime24": "19:00",
+          "endTime24": "20:00",
+          "nextOccurrenceIso": "2026-05-20T19:00:00+02:00",
+          "bookingUrl": "https://wa.me/27725884371?text=Hey%2C%20I%27m%20interested%20in%20booking%20the%20Spinning%20Goddess%20class%20with%20you%21"
+        },
+        {
+          "day": "Thursday",
+          "time": "6 PM",
+          "startTime24": "18:00",
+          "endTime24": "19:00",
+          "nextOccurrenceIso": "2026-05-21T18:00:00+02:00",
+          "bookingUrl": "https://wa.me/27725884371?text=Hey%2C%20I%27m%20interested%20in%20booking%20the%20Spinning%20Goddess%20class%20with%20you%21"
+        }
+      ]
+    },
+    {
+      "id": "class-heels-queens",
+      "name": "Heels & Queens",
+      "slug": "heels-and-queens",
+      "url": "https://www.c4flow.co.za/classes/heels-and-queens",
+      "shortDescription": "Craving a moment to slip on sexy heels and just dance? This class is all about confidence, flirtation, and passion.",
+      "descriptionText": "Craving a moment to slip on sexy heels and just dance? This class is all about confidence, flirtation, and passion.\n\nExotic, seductive floor moves—no pole, no props, just you, the beat, and your heels.\n\nStep in and own it. You're the Queen here. 👑🔥",
+      "descriptionBlocks": [
+        {
+          "_key": "hq1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "hq1s",
+              "_type": "span",
+              "marks": [],
+              "text": "Craving a moment to slip on sexy heels and just dance? This class is all about confidence, flirtation, and passion."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "hq2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "hq2s",
+              "_type": "span",
+              "marks": [],
+              "text": "Exotic, seductive floor moves—no pole, no props, just you, the beat, and your heels."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "hq3",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "hq3s",
+              "_type": "span",
+              "marks": [],
+              "text": "Step in and own it. You're the Queen here. 👑🔥"
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "summary": "Craving a moment to slip on sexy heels and just dance? This class is all about confidence, flirtation, and passion.",
+      "tagline": "No pole, just dancing & floorwork",
+      "category": "group",
+      "days": "Sat",
+      "daysSummary": "Sat",
+      "durationMinutes": 60,
+      "imageUrl": "https://cdn.sanity.io/images/ik9ho36m/production/001a22c3d4a0fd4136c8ffad25ad3095eeb0f6b7-768x1153.jpg",
+      "imageAlt": "Heels & Queens",
+      "imageLqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAeABQDASIAAhEBAxEB/8QAGwAAAQQDAAAAAAAAAAAAAAAAAAQFBwgCAwb/xAAmEAACAgIBAgYDAQAAAAAAAAABAgMEABEFBhITISIxMkEjUWGx/8QAFgEBAQEAAAAAAAAAAAAAAAAAAwQC/8QAHREAAwACAgMAAAAAAAAAAAAAAAECAxIRIRNBYf/aAAwDAQACEQMRAD8Awq9d1Da8J6Ei6btJ7h+8eeW6q43x61FIXc219Mi+wyILIrxdQTG2fSsjgAHR3/cX8MqinM0Zk8ZyBXZt7Q7+sgeOZ9FMN122Wa4qaGOhCpYD0j/MMrHyXU/UiW2jFiwpQBCEHlsYY6w9A7fRRy1KVeWszRdvczbBZdjElTln/JHLIVdfgoTW9ZIVStBGZ7NyMTKg+H9xlerA1gusSg72PL2yScyb4aHcVKNFCKPlq4txoyBzoqR9/eGdTRWOKsqogA99AYZrysxof//Z",
+      "bookingUrl": "https://wa.me/27725884371?text=Hey%2C%20I%27m%20interested%20in%20booking%20the%20Heels%20%26%20Queens%20class%20with%20you%21",
+      "priceCurrency": "ZAR",
+      "offerValidFrom": "2026-05-14T23:58:14.707689+00:00",
+      "listPrice": 200,
+      "currentPrice": 200,
+      "salePrice": null,
+      "hasDiscount": false,
+      "discountLabel": null,
+      "schedule": [
+        {
+          "day": "Saturday",
+          "time": "2:15 PM",
+          "startTime24": "14:15",
+          "endTime24": "15:15",
+          "nextOccurrenceIso": "2026-05-16T14:15:00+02:00",
+          "bookingUrl": "https://wa.me/27725884371?text=Hey%2C%20I%27m%20interested%20in%20booking%20the%20Heels%20%26%20Queens%20class%20with%20you%21"
+        }
+      ]
+    },
+    {
+      "id": "9d76302c-2c04-434a-a6bb-32d0d02bd3df",
+      "name": "Stretching & Flexibility",
+      "slug": "stretching-and-flexibility",
+      "url": "https://www.c4flow.co.za/classes/stretching-and-flexibility",
+      "shortDescription": "Improve your flexibility with our thorough stretching class.",
+      "descriptionText": "This class is all about slowing things down and giving your body some attention. We focus on deep stretching, improving flexibility, and building strength in a way that supports pole and exotic movement. Expect a mix of guided stretches, mobility work, and a little bit of flow to help you connect everything together. It’s suitable for all levels, whether you’re just starting out or looking to deepen your range and control. You’ll leave feeling more open, relaxed, and in tune with your body.",
+      "descriptionBlocks": [
+        {
+          "_key": "0f684b5385a4",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "8e5199fa148d",
+              "_type": "span",
+              "marks": [],
+              "text": "This class is all about slowing things down and giving your body some attention. We focus on deep stretching, improving flexibility, and building strength in a way that supports pole and exotic movement. Expect a mix of guided stretches, mobility work, and a little bit of flow to help you connect everything together. It’s suitable for all levels, whether you’re just starting out or looking to deepen your range and control. You’ll leave feeling more open, relaxed, and in tune with your body."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "summary": "Improve your flexibility with our thorough stretching class.",
+      "tagline": "Stretching & flexibility work",
+      "category": "group",
+      "days": null,
+      "daysSummary": "Mon",
+      "durationMinutes": 60,
+      "imageUrl": "https://cdn.sanity.io/images/ik9ho36m/production/b4ed1e31fafef623f2d4ae80f510c7e5c6830f45-2123x1413.jpg",
+      "imageAlt": "Stretching & Flexibility",
+      "imageLqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAUGAgT/xAAiEAABAwQBBQEAAAAAAAAAAAABAgMEAAUREgYhIjEyYVH/xAAXAQADAQAAAAAAAAAAAAAAAAABAwQF/8QAHBEBAAICAwEAAAAAAAAAAAAAAQACEiEDEzFR/9oADAMBAAIRAxEAPwBxb50S42Jt+Gp11xk9iQcK2+1m23m9EyJ0iQ2luPkaHHkflSliIRFdEdIaISpWw6mui1xUxOMT5S1rfcdBWNz6n5UGGQWmlTk6y1Q268GPZfOLq+4FsPMBGAOoBzRUDx2U61a20p0PcTlScnzRQYoD5P/Z",
+      "bookingUrl": "https://wa.me/27725884371?text=Hey%2C%20I%27m%20interested%20in%20booking%20the%20Stretching%20%26%20Flexibility%20class%20with%20you%21",
+      "priceCurrency": "ZAR",
+      "offerValidFrom": "2026-05-14T23:58:14.707689+00:00",
+      "listPrice": 200,
+      "currentPrice": 200,
+      "salePrice": null,
+      "hasDiscount": false,
+      "discountLabel": null,
+      "schedule": [
+        {
+          "day": "Monday",
+          "time": "6 PM",
+          "startTime24": "18:00",
+          "endTime24": "19:00",
+          "nextOccurrenceIso": "2026-05-18T18:00:00+02:00",
+          "bookingUrl": "https://wa.me/27725884371?text=Hey%2C%20I%27m%20interested%20in%20booking%20the%20Stretching%20%26%20Flexibility%20class%20with%20you%21"
+        }
+      ]
+    }
+  ],
+  "bundles": [
+    {
+      "id": "bundle-group-single",
+      "name": "Class by Class",
+      "category": "group",
+      "tagline": "Pay as you flow",
+      "note": "Valid for group classes only",
+      "highlighted": false,
+      "url": "https://www.c4flow.co.za/classes",
+      "priceCurrency": "ZAR",
+      "listPrice": 200,
+      "currentPrice": 200,
+      "salePrice": null,
+      "hasDiscount": false,
+      "discountLabel": null
+    },
+    {
+      "id": "bundle-private-single",
+      "name": "Class by Class",
+      "category": "private",
+      "tagline": null,
+      "note": "Your space to explore",
+      "highlighted": false,
+      "url": "https://www.c4flow.co.za/classes",
+      "priceCurrency": "ZAR",
+      "listPrice": 450,
+      "currentPrice": 450,
+      "salePrice": null,
+      "hasDiscount": false,
+      "discountLabel": null
+    },
+    {
+      "id": "bundle-group-6pack",
+      "name": "6-Class Pack",
+      "category": "group",
+      "tagline": "Consistency made simple.",
+      "note": "Valid for group classes only",
+      "highlighted": false,
+      "url": "https://www.c4flow.co.za/classes",
+      "priceCurrency": "ZAR",
+      "listPrice": 1050,
+      "currentPrice": 1050,
+      "salePrice": null,
+      "hasDiscount": false,
+      "discountLabel": null
+    },
+    {
+      "id": "bundle-private-4pack",
+      "name": "4-Class Pack",
+      "category": "private",
+      "tagline": null,
+      "note": "Build your momentum",
+      "highlighted": false,
+      "url": "https://www.c4flow.co.za/classes",
+      "priceCurrency": "ZAR",
+      "listPrice": 1500,
+      "currentPrice": 1500,
+      "salePrice": null,
+      "hasDiscount": false,
+      "discountLabel": null
+    },
+    {
+      "id": "bundle-group-10pack",
+      "name": "10-Class Pack",
+      "category": "group",
+      "tagline": "Ultimate flexibility for your schedule.",
+      "note": "Valid for group classes only",
+      "highlighted": false,
+      "url": "https://www.c4flow.co.za/classes",
+      "priceCurrency": "ZAR",
+      "listPrice": 1800,
+      "currentPrice": 1800,
+      "salePrice": null,
+      "hasDiscount": false,
+      "discountLabel": null
+    },
+    {
+      "id": "bundle-private-6pack",
+      "name": "6-Class Pack",
+      "category": "private",
+      "tagline": null,
+      "note": "Invest in your flow",
+      "highlighted": false,
+      "url": "https://www.c4flow.co.za/classes",
+      "priceCurrency": "ZAR",
+      "listPrice": 2100,
+      "currentPrice": 2100,
+      "salePrice": null,
+      "hasDiscount": false,
+      "discountLabel": null
+    },
+    {
+      "id": "bundle-group-unlimited",
+      "name": "Unlimited Monthly",
+      "category": "group",
+      "tagline": "Your practice, without limits.",
+      "note": "Unlimited group classes",
+      "highlighted": true,
+      "url": "https://www.c4flow.co.za/classes",
+      "priceCurrency": "ZAR",
+      "listPrice": 2000,
+      "currentPrice": 2000,
+      "salePrice": null,
+      "hasDiscount": false,
+      "discountLabel": null
+    },
+    {
+      "id": "bundle-private-8pack",
+      "name": "8-Class Pack",
+      "category": "private",
+      "tagline": null,
+      "note": "Stay in the flow",
+      "highlighted": false,
+      "url": "https://www.c4flow.co.za/classes",
+      "priceCurrency": "ZAR",
+      "listPrice": 2400,
+      "currentPrice": 2400,
+      "salePrice": null,
+      "hasDiscount": false,
+      "discountLabel": null
+    },
+    {
+      "id": "bundle-private-10pack",
+      "name": "10-Class Pack",
+      "category": "private",
+      "tagline": null,
+      "note": "Go all in",
+      "highlighted": true,
+      "url": "https://www.c4flow.co.za/classes",
+      "priceCurrency": "ZAR",
+      "listPrice": 2750,
+      "currentPrice": 2750,
+      "salePrice": null,
+      "hasDiscount": false,
+      "discountLabel": null
+    }
+  ],
+  "scheduleByDay": [
+    {
+      "day": "Monday",
+      "slots": [
+        {
+          "day": "Monday",
+          "time": "6 PM",
+          "startTime24": "18:00",
+          "endTime24": "19:00",
+          "nextOccurrenceIso": "2026-05-18T18:00:00+02:00",
+          "bookingUrl": "https://wa.me/27725884371?text=Hey%2C%20I%27m%20interested%20in%20booking%20the%20Stretching%20%26%20Flexibility%20class%20with%20you%21",
+          "classId": "9d76302c-2c04-434a-a6bb-32d0d02bd3df",
+          "className": "Stretching & Flexibility",
+          "classSlug": "stretching-and-flexibility",
+          "classUrl": "https://www.c4flow.co.za/classes/stretching-and-flexibility",
+          "currentPrice": 200,
+          "listPrice": 200,
+          "durationMinutes": 60
+        },
+        {
+          "day": "Monday",
+          "time": "7:15 PM",
+          "startTime24": "19:15",
+          "endTime24": "20:15",
+          "nextOccurrenceIso": "2026-05-18T19:15:00+02:00",
+          "bookingUrl": "https://wa.me/27725884371?text=Hey%2C%20I%27m%20interested%20in%20booking%20the%20Free%20Play%20class%20with%20you%21",
+          "classId": "8bbd5167-5ade-4056-bd14-bb7d0da29779",
+          "className": "Free Play",
+          "classSlug": "free-play",
+          "classUrl": "https://www.c4flow.co.za/classes/free-play",
+          "currentPrice": 0,
+          "listPrice": 0,
+          "durationMinutes": 60
+        }
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "slots": [
+        {
+          "day": "Tuesday",
+          "time": "5:45 PM",
+          "startTime24": "17:45",
+          "endTime24": "18:45",
+          "nextOccurrenceIso": "2026-05-19T17:45:00+02:00",
+          "bookingUrl": "https://wa.me/27725884371?text=Hey%2C%20I%27m%20interested%20in%20booking%20the%20Dynamic%20Static%20class%20with%20you%21",
+          "classId": "class-dynamic-static",
+          "className": "Dynamic Static",
+          "classSlug": "dynamic-static",
+          "classUrl": "https://www.c4flow.co.za/classes/dynamic-static",
+          "currentPrice": 200,
+          "listPrice": 200,
+          "durationMinutes": 60
+        }
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "slots": [
+        {
+          "day": "Wednesday",
+          "time": "7 PM",
+          "startTime24": "19:00",
+          "endTime24": "20:00",
+          "nextOccurrenceIso": "2026-05-20T19:00:00+02:00",
+          "bookingUrl": "https://wa.me/27725884371?text=Hey%2C%20I%27m%20interested%20in%20booking%20the%20Exotic%20Baddies%20class%20with%20you%21",
+          "classId": "class-exotic-baddies",
+          "className": "Exotic Baddies",
+          "classSlug": "exotic-baddies",
+          "classUrl": "https://www.c4flow.co.za/classes/exotic-baddies",
+          "currentPrice": 200,
+          "listPrice": 200,
+          "durationMinutes": 60
+        },
+        {
+          "day": "Wednesday",
+          "time": "7 PM",
+          "startTime24": "19:00",
+          "endTime24": "20:00",
+          "nextOccurrenceIso": "2026-05-20T19:00:00+02:00",
+          "bookingUrl": "https://wa.me/27725884371?text=Hey%2C%20I%27m%20interested%20in%20booking%20the%20Spinning%20Goddess%20class%20with%20you%21",
+          "classId": "class-spinning-goddess",
+          "className": "Spinning Goddess",
+          "classSlug": "spinning-goddess",
+          "classUrl": "https://www.c4flow.co.za/classes/spinning-goddess",
+          "currentPrice": 200,
+          "listPrice": 200,
+          "durationMinutes": 60
+        }
+      ]
+    },
+    {
+      "day": "Thursday",
+      "slots": [
+        {
+          "day": "Thursday",
+          "time": "6 PM",
+          "startTime24": "18:00",
+          "endTime24": "19:00",
+          "nextOccurrenceIso": "2026-05-21T18:00:00+02:00",
+          "bookingUrl": "https://wa.me/27725884371?text=Hey%2C%20I%27m%20interested%20in%20booking%20the%20Spinning%20Goddess%20class%20with%20you%21",
+          "classId": "class-spinning-goddess",
+          "className": "Spinning Goddess",
+          "classSlug": "spinning-goddess",
+          "classUrl": "https://www.c4flow.co.za/classes/spinning-goddess",
+          "currentPrice": 200,
+          "listPrice": 200,
+          "durationMinutes": 60
+        }
+      ]
+    },
+    {
+      "day": "Saturday",
+      "slots": [
+        {
+          "day": "Saturday",
+          "time": "2:15 PM",
+          "startTime24": "14:15",
+          "endTime24": "15:15",
+          "nextOccurrenceIso": "2026-05-16T14:15:00+02:00",
+          "bookingUrl": "https://wa.me/27725884371?text=Hey%2C%20I%27m%20interested%20in%20booking%20the%20Heels%20%26%20Queens%20class%20with%20you%21",
+          "classId": "class-heels-queens",
+          "className": "Heels & Queens",
+          "classSlug": "heels-and-queens",
+          "classUrl": "https://www.c4flow.co.za/classes/heels-and-queens",
+          "currentPrice": 200,
+          "listPrice": 200,
+          "durationMinutes": 60
+        }
+      ]
+    }
+  ]
+}

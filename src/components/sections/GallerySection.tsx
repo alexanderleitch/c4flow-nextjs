@@ -1,14 +1,15 @@
-import { urlFor } from "@/sanity/lib/image";
 import { Container } from "@/components/shared/Container";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 import { GalleryGrid } from "@/components/ui/GalleryGrid";
 
 interface GalleryImage {
   _key: string;
-  asset?: { _ref: string };
   alt?: string;
   caption?: string;
-  lqip?: string | null;
+  asset?: {
+    url?: string | null;
+    metadata?: { lqip?: string | null } | null;
+  } | null;
 }
 
 interface GallerySectionProps {
@@ -17,31 +18,26 @@ interface GallerySectionProps {
   images?: GalleryImage[] | null;
 }
 
-export function GallerySection({
-  heading,
-  subtitle,
-  images,
-}: GallerySectionProps) {
+export function GallerySection({ heading, subtitle, images }: GallerySectionProps) {
   if (!images?.length) return null;
 
   const preparedImages = images
-    .filter((img) => img.asset)
+    .filter((img) => img.asset?.url)
     .map((img) => ({
       _key: img._key,
-      thumbUrl: urlFor(img).width(600).height(600).quality(80).url(),
-      fullUrl: urlFor(img).width(1600).quality(90).url(),
+      thumbUrl: img.asset!.url!,
+      fullUrl: img.asset!.url!,
       alt: img.alt || "Gallery image",
       caption: img.caption || null,
-      lqip: img.lqip || null,
+      lqip: img.asset?.metadata?.lqip || null,
     }));
+
+  if (!preparedImages.length) return null;
 
   return (
     <section className="relative overflow-hidden bg-muted py-8 md:py-24">
       <Container>
-        <SectionHeading subtitle={subtitle}>
-          {heading || "Gallery"}
-        </SectionHeading>
-
+        <SectionHeading subtitle={subtitle}>{heading || "Gallery"}</SectionHeading>
         <GalleryGrid images={preparedImages} />
       </Container>
     </section>

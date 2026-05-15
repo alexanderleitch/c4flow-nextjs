@@ -1,0 +1,223 @@
+{
+  "slug": "home",
+  "title": "Home",
+  "seoTitle": "C4 Flow | Pole & Exotic Dance Studio Cape Town",
+  "seoDescription": "C4 Flow Studio offers pole dancing classes Cape Town loves — group and private classes for all levels at our inclusive Woodstock studio.",
+  "ogImageUrl": null,
+  "sections": [
+    {
+      "_key": "hero",
+      "_type": "hero",
+      "backgroundImage": {
+        "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAUHBP/EACAQAAICAgICAwAAAAAAAAAAAAIDAQQAEhEhBQYHMXH/xAAWAQEBAQAAAAAAAAAAAAAAAAAEAQP/xAAZEQEAAwEBAAAAAAAAAAAAAAABAAIREiH/2gAMAwEAAhEDEQA/AH1j30K9VK62ktEhghLNN35EYnz9NWq5SY8EcfQ85FvZKA03rapre4iNduv3HC6g30VmEUg0Rjko75wjVHyKpanLpLpX8tFsSeLFamUzHeGS3w1SDoBuwimJmOcMnLMtJ//Z",
+        "url": "https://cdn.sanity.io/images/ik9ho36m/production/b87eb2ba6bb974db6495ef808693373e09ca3e5d-1920x1223.jpg"
+      },
+      "headline": "C4 Flow",
+      "image": null,
+      "images": null,
+      "instructor": null,
+      "layout": "centered",
+      "overlayLogo": null,
+      "subtitle": "Pole & Exotic Dance Studio",
+      "tagline": "Move to Express"
+    },
+    {
+      "_key": "benefits",
+      "_type": "featureGrid",
+      "backgroundImage": null,
+      "features": [
+        {
+          "_key": "strength",
+          "_type": "feature",
+          "description": "Build full-body strength through controlled lifts, holds, and dynamic movement.",
+          "icon": {
+            "_type": "image",
+            "asset": {
+              "_ref": "image-4488b48c30607952e5502014f33ca9280741e3f7-512x512-png",
+              "_type": "reference"
+            },
+            "url": "https://cdn.sanity.io/images/ik9ho36m/production/4488b48c30607952e5502014f33ca9280741e3f7-512x512.png"
+          },
+          "title": "Strength"
+        },
+        {
+          "_key": "balance",
+          "_type": "feature",
+          "description": "Develop balance and body awareness by training control, coordination, and precision.",
+          "icon": {
+            "_type": "image",
+            "asset": {
+              "_ref": "image-88da4f35d3d19859c540e4c804b42990e66fd4cb-512x512-png",
+              "_type": "reference"
+            },
+            "url": "https://cdn.sanity.io/images/ik9ho36m/production/88da4f35d3d19859c540e4c804b42990e66fd4cb-512x512.png"
+          },
+          "title": "Balance"
+        },
+        {
+          "_key": "flexibility",
+          "_type": "feature",
+          "description": "Increase flexibility over time through active stretching and fluid range-of-motion work.",
+          "icon": {
+            "_type": "image",
+            "asset": {
+              "_ref": "image-813c61f33ea5258c88a446ded28b49e96689d63c-512x512-png",
+              "_type": "reference"
+            },
+            "url": "https://cdn.sanity.io/images/ik9ho36m/production/813c61f33ea5258c88a446ded28b49e96689d63c-512x512.png"
+          },
+          "title": "Flexibility"
+        },
+        {
+          "_key": "flow",
+          "_type": "feature",
+          "description": "Learn how to move seamlessly, connect transitions, and express emotion through movement.",
+          "icon": {
+            "_type": "image",
+            "asset": {
+              "_ref": "image-0db7efddc306f17c4b906e11e887c405981ece1c-256x256-png",
+              "_type": "reference"
+            },
+            "url": "https://cdn.sanity.io/images/ik9ho36m/production/0db7efddc306f17c4b906e11e887c405981ece1c-256x256.png"
+          },
+          "title": "Flow"
+        }
+      ],
+      "image": null,
+      "images": null,
+      "instructor": null,
+      "overlayLogo": null,
+      "style": "minimal"
+    },
+    {
+      "_key": "classes",
+      "_type": "classesSection",
+      "backgroundImage": null,
+      "columns": 3,
+      "heading": "Our Classes",
+      "image": null,
+      "images": null,
+      "instructor": null,
+      "overlayLogo": null,
+      "showBookingNote": true,
+      "subtitle": "Choose from group classes or private sessions — there's something for every body."
+    },
+    {
+      "_key": "schedule",
+      "_type": "scheduleSection",
+      "backgroundImage": null,
+      "heading": "Weekly Schedule",
+      "image": null,
+      "images": null,
+      "instructor": null,
+      "overlayLogo": null,
+      "subtitle": "Find a class time that works for you."
+    },
+    {
+      "_key": "instructor",
+      "_type": "instructorSection",
+      "backgroundImage": null,
+      "heading": "Meet Your Instructor",
+      "image": null,
+      "images": null,
+      "instructor": {
+        "bio": [
+          {
+            "_key": "bio1",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "bio1s",
+                "_type": "span",
+                "marks": [],
+                "text": "Cattleya is an international performer from Eastern Europe with over 10 years of experience. Her background includes hip hop, disco dance, ballet, stage performance, burlesque, fire spinning, pole dance, and aerial arts."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "bio2",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "bio2s",
+                "_type": "span",
+                "marks": [],
+                "text": "Driven by a constant desire to grow, she continues to refine her skills while exploring new techniques and styles. One thing has always remained clear: dance is her life."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "bio3",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "bio3s",
+                "_type": "span",
+                "marks": [],
+                "text": "With four years of teaching experience, primarily through one-on-one sessions, Cattleya has developed a flexible, student-focused approach. She believes a teacher is only as good as their students, and her work has always centered on supporting and uplifting them."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "bio4",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "bio4s",
+                "_type": "span",
+                "marks": [],
+                "text": "Dance shaped her in a unique and personal way, helping her become the best version of herself; sharing that journey with others came naturally. She is passionate about creating a space where students feel happy, empowered, and leave each class feeling stronger than before. Dance has been part of her life since childhood. It was her escape, her guidance, and her learning ground, shaping her values and sense of self. Today, it remains her daily therapy and the place where she can truly be herself."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "experience": "Over 10 years of dance experience",
+        "name": "Cattleya",
+        "photoLqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAeABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQDBQYH/8QAJhAAAgICAgAFBQEAAAAAAAAAAQIDBAARBSEGEyMxQgcSIjJRQf/EABYBAQEBAAAAAAAAAAAAAAAAAAMCAf/EABwRAAMAAgMBAAAAAAAAAAAAAAABEQISAyEiUf/aAAwDAQACEQMRAD8A5FY5nkePZa9azIkQHSqxAx6p4/8AEVEeVHfcddKw31inM0FbnkrCZAn278wdgDJeX4uK1bEcFuN5YIuwB+2DUomXptYWEf1R8RRoFaaJyPkyd4Zk46Wl9WvMX/qnrDL1x+BQdl5VF4uvLCgE6ygOzDfX8w5u9ZtFL0XloD16Y0SMr7jIaLqqa/3FjyKmkkJi/Jflv3zMse0xOPLy1TQJadlDbGyNnvDKxZ3Cgg62N+2GHBKf/9k=",
+        "photoUrl": "https://cdn.sanity.io/images/ik9ho36m/production/5acea2b1c2b212050902ba967becf26e5e5c589a-1024x1539.jpg",
+        "title": "Lead Instructor & Studio Director"
+      },
+      "overlayLogo": null
+    },
+    {
+      "_key": "cta",
+      "_type": "ctaSection",
+      "backgroundImage": {
+        "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQDBQj/xAAcEAACAgIDAAAAAAAAAAAAAAAAAQIRAyEEE1H/xAAWAQEBAQAAAAAAAAAAAAAAAAADAgX/xAAZEQEBAAMBAAAAAAAAAAAAAAABAAIDExH/2gAMAwEAAhEDEQA/ANA5OVbCGeyvskg9Am/L23HUBP8AevQEG9gL3aeRf//Z",
+        "url": "https://cdn.sanity.io/images/ik9ho36m/production/58684679b050e0ad40d5c833cab3a8b120d1981d-1920x1080.jpg"
+      },
+      "buttonText": "Book Now",
+      "buttonUrl": "https://movetoexpresswithc4flow.setmore.com/",
+      "heading": "Ready to start your journey?",
+      "image": null,
+      "images": null,
+      "instructor": null,
+      "overlayLogo": null,
+      "style": "bgImage",
+      "subtitle": [
+        {
+          "_key": "6e1b2939065f",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "6b046ba05f7d",
+              "_type": "span",
+              "marks": [],
+              "text": "Book your first class today and move to express."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ]
+    }
+  ]
+}

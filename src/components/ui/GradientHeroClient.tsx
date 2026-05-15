@@ -4,7 +4,6 @@ import { useRef, useCallback } from "react";
 import Image from "next/image";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import { PortableText } from "@portabletext/react";
-import { urlFor, blurProps } from "@/sanity/lib/image";
 import { HeroCta } from "@/components/sections/hero/HeroCta";
 
 interface GradientHeroClientProps {
@@ -13,14 +12,13 @@ interface GradientHeroClientProps {
   subtitle?: string | null;
   body?: Array<Record<string, unknown>> | string | null;
   backgroundImage?: {
-    asset?: { _ref: string };
+    url?: string | null;
     alt?: string;
     lqip?: string | null;
   } | null;
   ctaText?: string | null;
   ctaUrl?: string | null;
 }
-
 
 const SPRING_CONFIG = { stiffness: 50, damping: 30, mass: 1 };
 
@@ -33,7 +31,7 @@ export function GradientHeroClient({
   ctaText,
   ctaUrl,
 }: GradientHeroClientProps) {
-  const hasBgImage = !!backgroundImage?.asset;
+  const hasBgImage = !!backgroundImage?.url;
   const sectionRef = useRef<HTMLElement>(null);
 
   const blobAx = useMotionValue(0);
@@ -76,20 +74,20 @@ export function GradientHeroClient({
       onMouseLeave={handleMouseLeave}
       className="relative isolate overflow-hidden bg-white px-6 py-14 sm:py-20 lg:px-8 lg:py-28"
     >
-      {/* Optional background image */}
       {hasBgImage && (
         <Image
-          src={urlFor(backgroundImage).width(1920).height(800).quality(80).url()}
+          src={backgroundImage!.url!}
           alt=""
           fill
           priority
           className="object-cover -z-20"
           sizes="100vw"
-          {...blurProps(backgroundImage.lqip)}
+          {...(backgroundImage!.lqip
+            ? { placeholder: "blur" as const, blurDataURL: backgroundImage!.lqip }
+            : {})}
         />
       )}
 
-      {/* Decorative blob — top-right */}
       <motion.div
         aria-hidden="true"
         className="absolute -top-10 right-1/2 -z-10 mr-10 hidden transform-gpu blur-3xl sm:block"
@@ -98,7 +96,6 @@ export function GradientHeroClient({
         <div className="blob-clip aspect-1097/845 w-274 bg-linear-to-tr from-pink-300 to-primary-300 opacity-20" />
       </motion.div>
 
-      {/* Decorative blob — top-left */}
       <motion.div
         aria-hidden="true"
         className="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:ml-16 sm:-top-112 sm:translate-x-0"

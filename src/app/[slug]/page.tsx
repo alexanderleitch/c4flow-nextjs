@@ -1,50 +1,48 @@
-import { Metadata } from "next";
+import { readFileSync, readdirSync } from "node:fs";
+import { join } from "node:path";
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { sanityFetch } from "@/sanity/lib/live";
-import {
-  PAGE_BY_SLUG_QUERY,
-  ALL_PAGE_SLUGS_QUERY,
-  SITE_SETTINGS_QUERY,
-} from "@/sanity/lib/queries";
-import { urlFor } from "@/sanity/lib/image";
 import { PageBuilder } from "@/components/sections/PageBuilder";
 import { JsonLd } from "@/components/shared/JsonLd";
 import { buildFaqJsonLd } from "@/lib/seo";
 import { getKnowledgeBase } from "@/lib/catalog";
 import { buildCatalogPageJsonLd } from "@/lib/structured-data";
 
+interface PageData {
+  slug: string;
+  title: string | null;
+  seoTitle: string | null;
+  seoDescription: string | null;
+  ogImageUrl: string | null;
+  sections: unknown[];
+}
+
+const PAGES_DIR = join(process.cwd(), "content/pages");
+
+function loadPage(slug: string): PageData | null {
+  try {
+    const raw = readFileSync(join(PAGES_DIR, `${slug}.json`), "utf-8");
+    return JSON.parse(raw) as PageData;
+  } catch {
+    return null;
+  }
+}
+
 interface PageProps {
   params: Promise<{ slug: string }>;
 }
 
 export async function generateStaticParams() {
-  const { data: slugs } = await sanityFetch({
-    query: ALL_PAGE_SLUGS_QUERY,
-    perspective: "published",
-    stega: false,
-  });
-
-  return (slugs || [])
-    .filter((s: { slug: string }) => s.slug !== "home")
-    .map((s: { slug: string }) => ({ slug: s.slug }));
+  const files = readdirSync(PAGES_DIR).filter(
+    (f) => f.endsWith(".json") && f !== "home.json",
+  );
+  return files.map((f) => ({ slug: f.replace(".json", "") }));
 }
 
-export async function generateMetadata({
-  params,
-}: PageProps): Promise<Metadata> {
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  const [{ data: page }, { data: settings }] = await Promise.all([
-    sanityFetch({ query: PAGE_BY_SLUG_QUERY, params: { slug }, stega: false }),
-    sanityFetch({ query: SITE_SETTINGS_QUERY, stega: false }),
-  ]);
-
+  const page = loadPage(slug);
   if (!page) return {};
-
-  const ogImage = page.ogImage?.asset
-    ? urlFor(page.ogImage).width(1200).height(630).url()
-    : settings?.defaultOgImage?.asset
-      ? urlFor(settings.defaultOgImage).width(1200).height(630).url()
-      : undefined;
 
   const title = page.seoTitle || page.title || undefined;
   const description = page.seoDescription || undefined;
@@ -52,9 +50,7 @@ export async function generateMetadata({
   return {
     title,
     description,
-    alternates: {
-      canonical: `/${slug}`,
-    },
+    alternates: { canonical: `/${slug}` },
     openGraph: {
       type: "website",
       locale: "en_ZA",
@@ -62,44 +58,34 @@ export async function generateMetadata({
       title,
       description,
       url: `/${slug}`,
-      ...(ogImage && {
-        images: [{ url: ogImage, width: 1200, height: 630, type: "image/jpeg" }],
+      ...(page.ogImageUrl && {
+        images: [{ url: page.ogImageUrl, width: 1200, height: 630, type: "image/jpeg" }],
       }),
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      ...(ogImage && { images: [ogImage] }),
+      ...(page.ogImageUrl && { images: [page.ogImageUrl] }),
     },
   };
 }
 
 export default async function DynamicPage({ params }: PageProps) {
   const { slug } = await params;
-
-  const [{ data: page }, { data: settings }, knowledge] = await Promise.all([
-    sanityFetch({ query: PAGE_BY_SLUG_QUERY, params: { slug } }),
-    sanityFetch({ query: SITE_SETTINGS_QUERY, stega: false }),
+  const [page, knowledge] = await Promise.all([
+    Promise.resolve(loadPage(slug)),
     getKnowledgeBase(),
   ]);
 
   if (!page) notFound();
 
-  const siteLogoUrl = settings?.logo?.asset
-    ? urlFor(settings.logo).width(320).url()
-    : null;
   const faqJsonLd = buildFaqJsonLd(page.sections as never);
   const sectionTypes = (page.sections || [])
-    .map((section: { _type?: string | null }) => section?._type || "")
+    .map((s: unknown) => (s as { _type?: string })?._type || "")
     .filter(Boolean);
-  const showCatalogJsonLd = sectionTypes.some((type: string) =>
-    [
-      "classesSection",
-      "classDetailsSection",
-      "scheduleSection",
-      "pricingSection",
-    ].includes(type),
+  const showCatalogJsonLd = sectionTypes.some((t: string) =>
+    ["classesSection", "classDetailsSection", "scheduleSection", "pricingSection"].includes(t),
   );
   const catalogJsonLd = showCatalogJsonLd
     ? buildCatalogPageJsonLd({
@@ -117,7 +103,7 @@ export default async function DynamicPage({ params }: PageProps) {
     <main id="main-content">
       {faqJsonLd && <JsonLd data={faqJsonLd} />}
       {catalogJsonLd && <JsonLd data={catalogJsonLd} />}
-      <PageBuilder sections={page.sections} siteLogoUrl={siteLogoUrl} />
+      <PageBuilder sections={page.sections as never} siteLogoUrl={knowledge.site.logoUrl} />
     </main>
   );
 }

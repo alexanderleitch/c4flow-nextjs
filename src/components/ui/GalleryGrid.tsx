@@ -5,7 +5,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Lightbox, { type Slide } from "yet-another-react-lightbox";
 import { trackGalleryOpen } from "@/lib/analytics";
-import { blurProps } from "@/sanity/lib/image";
 import Captions from "yet-another-react-lightbox/plugins/captions";
 import Counter from "yet-another-react-lightbox/plugins/counter";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
@@ -33,11 +32,7 @@ const gridVariants = {
 
 const itemVariants = {
   hidden: { opacity: 0, y: 30 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.4, ease: "easeOut" as const },
-  },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeOut" as const } },
 };
 
 export function GalleryGrid({ images }: GalleryGridProps) {
@@ -80,32 +75,21 @@ export function GalleryGrid({ images }: GalleryGridProps) {
               fill
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               className="object-cover transition-transform duration-500 group-hover:scale-105"
-              {...blurProps(image.lqip)}
+              {...(image.lqip
+                ? { placeholder: "blur" as const, blurDataURL: image.lqip }
+                : {})}
             />
-            {/* Hover overlay */}
             <div
               className="absolute inset-0 bg-primary-700/0 transition-colors duration-300 group-hover:bg-primary-700/20"
               aria-hidden="true"
             />
-            {/* Caption on hover */}
             {image.caption && (
               <div className="absolute inset-x-0 bottom-0 translate-y-full bg-linear-to-t from-black/70 to-transparent px-4 pb-4 pt-10 transition-transform duration-300 group-hover:translate-y-0">
                 <p className="text-sm text-white">{image.caption}</p>
               </div>
             )}
-            {/* Expand icon */}
             <div className="absolute right-3 top-3 flex h-8 w-8 items-center justify-center rounded-full bg-white/0 text-white opacity-0 backdrop-blur-sm transition-all duration-300 group-hover:bg-white/80 group-hover:text-neutral-800 group-hover:opacity-100">
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                aria-hidden="true"
-              >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <polyline points="15 3 21 3 21 9" />
                 <polyline points="9 21 3 21 3 15" />
                 <line x1="21" y1="3" x2="14" y2="10" />
@@ -127,9 +111,7 @@ export function GalleryGrid({ images }: GalleryGridProps) {
         animation={{ fade: 250, swipe: 300 }}
         carousel={{ finite: false, preload: 2 }}
         zoom={{ maxZoomPixelRatio: 3 }}
-        styles={{
-          container: { backgroundColor: "rgba(0, 0, 0, 0.92)" },
-        }}
+        styles={{ container: { backgroundColor: "rgba(0, 0, 0, 0.92)" } }}
         render={{
           iconPrev: () => <ChevronIcon direction="left" />,
           iconNext: () => <ChevronIcon direction="right" />,
@@ -142,37 +124,15 @@ export function GalleryGrid({ images }: GalleryGridProps) {
 
 function ChevronIcon({ direction }: { direction: "left" | "right" }) {
   return (
-    <svg
-      width="28"
-      height="28"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      {direction === "left" ? (
-        <polyline points="15 18 9 12 15 6" />
-      ) : (
-        <polyline points="9 6 15 12 9 18" />
-      )}
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      {direction === "left" ? <polyline points="15 18 9 12 15 6" /> : <polyline points="9 6 15 12 9 18" />}
     </svg>
   );
 }
 
 function CloseIcon() {
   return (
-    <svg
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <line x1="18" y1="6" x2="6" y2="18" />
       <line x1="6" y1="6" x2="18" y2="18" />
     </svg>

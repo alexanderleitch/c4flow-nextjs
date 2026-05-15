@@ -1,15 +1,15 @@
 import { MetadataRoute } from "next";
 import { getSiteOriginForMetadata } from "@/lib/site-origin";
 
-const baseUrl = getSiteOriginForMetadata();
+export const dynamic = "force-static";
 
 export default function robots(): MetadataRoute.Robots {
+  const baseUrl = getSiteOriginForMetadata();
   return {
     rules: [
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/admin", "/api/"],
       },
     ],
     sitemap: `${baseUrl}/sitemap.xml`,
