@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { NAV_LINKS } from "@/lib/constants";
+import { NAV_LINKS, SITE_CONFIG } from "@/lib/constants";
 import { trackNavClick, trackBookNow } from "@/lib/analytics";
 import { getExternalLinkRel } from "@/lib/seo";
 
@@ -80,16 +80,16 @@ export function Header({ siteName, logoUrl }: HeaderProps) {
               {link.label}
             </Link>
           ))}
-          <Link
-            href="https://movetoexpresswithc4flow.setmore.com/"
+          <a
+            href={SITE_CONFIG.booking.url}
             target="_blank"
-            rel={getExternalLinkRel("https://movetoexpresswithc4flow.setmore.com/")}
+            rel={getExternalLinkRel(SITE_CONFIG.booking.url)}
             onClick={() => trackBookNow(undefined, "header")}
             className="rounded-full bg-pink-500 px-5 py-2 text-sm font-medium text-white hover:bg-pink-600"
           >
-            Book Now
+            Contact to Book
             <span className="sr-only"> (opens in new tab)</span>
-          </Link>
+          </a>
         </nav>
 
         {/* Mobile menu button */}
@@ -168,19 +168,19 @@ export function Header({ siteName, logoUrl }: HeaderProps) {
                 initial="closed"
                 animate="open"
               >
-                <Link
-                  href="https://movetoexpresswithc4flow.setmore.com/"
+                <a
+                  href={SITE_CONFIG.booking.url}
                   target="_blank"
-                  rel={getExternalLinkRel("https://movetoexpresswithc4flow.setmore.com/")}
+                  rel={getExternalLinkRel(SITE_CONFIG.booking.url)}
                   onClick={() => {
                     closeMenu();
                     trackBookNow(undefined, "header_mobile");
                   }}
                   className="mt-2 block rounded-full bg-pink-500 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-pink-600"
                 >
-                  Book Now
+                  Contact to Book
                   <span className="sr-only"> (opens in new tab)</span>
-                </Link>
+                </a>
               </motion.div>
             </nav>
           </motion.div>
