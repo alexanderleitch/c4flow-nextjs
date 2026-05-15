@@ -31,6 +31,7 @@ jobs:
         run: npm run build
         env:
           NEXT_PUBLIC_SITE_URL: https://www.c4flow.co.za
+          NEXT_PUBLIC_BASE_PATH: /c4flow-nextjs
 
       - uses: actions/upload-pages-artifact@v3
         with:
