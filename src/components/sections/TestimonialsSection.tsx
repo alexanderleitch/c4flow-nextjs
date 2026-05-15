@@ -2,7 +2,6 @@
 
 import { useRef, useState, useEffect, useCallback } from "react";
 import Image from "next/image";
-import { urlFor, blurProps } from "@/sanity/lib/image";
 import { ChevronLeft, ChevronRight, Star, Quote } from "lucide-react";
 import { Container } from "@/components/shared/Container";
 import { SectionHeading } from "@/components/shared/SectionHeading";
@@ -13,7 +12,7 @@ interface Testimonial {
   quote: string | null;
   name: string | null;
   role: string | null;
-  photo: { asset?: { _ref: string }; lqip?: string | null } | null;
+  photo: { url?: string | null; lqip?: string | null } | null;
   rating: number | null;
 }
 
@@ -183,7 +182,7 @@ function TestimonialCard({
   index: number;
 }) {
   const { quote, name, role, photo, rating } = testimonial;
-  const hasPhoto = !!photo?.asset;
+  const hasPhoto = !!photo?.url;
   const initials = name
     ? name
         .split(" ")
@@ -239,12 +238,12 @@ function TestimonialCard({
           {/* Avatar */}
           {hasPhoto ? (
             <Image
-              src={urlFor(photo).width(80).height(80).url()}
+              src={photo!.url!}
               alt={name || "Student"}
               width={40}
               height={40}
               className="h-10 w-10 rounded-full object-cover ring-2 ring-white"
-              {...blurProps(photo?.lqip)}
+              {...(photo?.lqip ? { placeholder: "blur" as const, blurDataURL: photo.lqip } : {})}
             />
           ) : (
             <div
