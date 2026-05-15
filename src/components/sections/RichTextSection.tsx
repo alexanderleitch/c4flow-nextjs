@@ -3,20 +3,12 @@ import { PortableText } from "@portabletext/react";
 import { Container } from "@/components/shared/Container";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 import { cn } from "@/lib/utils";
-import { stegaClean } from "next-sanity";
-import { urlFor } from "@/sanity/lib/image";
-
-interface SanityImage {
-  asset?: { _ref?: string; _type?: string } | null;
-  hotspot?: { x: number; y: number } | null;
-  crop?: { top: number; bottom: number; left: number; right: number } | null;
-}
 
 interface RichTextSectionProps {
   heading?: string | null;
   content?: Array<Record<string, unknown>> | null;
   layout?: string | null;
-  image?: SanityImage | null;
+  image?: { url?: string | null; lqip?: string | null } | null;
   imagePosition?: string | null;
 }
 
@@ -29,9 +21,9 @@ export function RichTextSection({
 }: RichTextSectionProps) {
   if (!content) return null;
 
-  const cleanLayout = stegaClean(layout) || "centered";
-  const cleanImagePos = stegaClean(imagePosition) || "right";
-  const hasImage = cleanLayout === "textImage" && image?.asset;
+  const cleanLayout = layout || "centered";
+  const cleanImagePos = imagePosition || "right";
+  const hasImage = cleanLayout === "textImage" && !!image?.url;
 
   if (hasImage) {
     return (
@@ -44,7 +36,6 @@ export function RichTextSection({
               cleanImagePos === "left" && "md:[&>*:first-child]:order-2"
             )}
           >
-            {/* Text column */}
             <div
               className={cn(
                 "prose prose-base text-neutral-600 md:prose-lg",
@@ -55,15 +46,16 @@ export function RichTextSection({
             >
               <PortableText value={content as never} />
             </div>
-
-            {/* Image column */}
             <div className="relative aspect-4/3 overflow-hidden rounded-2xl">
               <Image
-                src={urlFor(image).width(800).height(600).url()}
+                src={image!.url!}
                 alt={heading || ""}
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"
+                {...(image!.lqip
+                  ? { placeholder: "blur" as const, blurDataURL: image!.lqip }
+                  : {})}
               />
             </div>
           </div>

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { urlFor, blurProps } from "@/sanity/lib/image";
 import { cn } from "@/lib/utils";
 import type { HeroSectionProps } from "./types";
 import { heroAspectClasses, hasImageRatio } from "./types";
@@ -31,9 +30,7 @@ export function CenteredHero({
   ctaText,
   ctaUrl,
 }: CenteredHeroProps) {
-  const logoSrc = overlayLogo?.asset
-    ? urlFor(overlayLogo).width(320).url()
-    : siteLogoUrl;
+  const logoSrc = overlayLogo?.url ?? siteLogoUrl;
 
   return (
     <section
@@ -44,15 +41,17 @@ export function CenteredHero({
           : "h-[calc(100svh-var(--header-h)-var(--banner-h))]",
       )}
     >
-      {backgroundImage?.asset ? (
+      {backgroundImage?.url ? (
         <>
           <Image
-            src={urlFor(backgroundImage).width(1920).quality(85).url()}
+            src={backgroundImage.url}
             alt={backgroundImage.alt || ""}
             fill
             priority
             className="object-cover"
-            {...blurProps(backgroundImage.lqip)}
+            {...(backgroundImage.lqip
+              ? { placeholder: "blur" as const, blurDataURL: backgroundImage.lqip }
+              : {})}
           />
           <div className="absolute inset-0 bg-plum-900/60" aria-hidden="true" />
         </>

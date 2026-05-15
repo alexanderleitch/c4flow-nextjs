@@ -1,0 +1,58 @@
+{
+  "slug": "contact",
+  "title": "C4 Flow | Contact",
+  "seoTitle": "Contact C-4 Flow | Pole Dance Studio Cape Town",
+  "seoDescription": "Get in touch with C-4 Flow. Send us a message, find us on the map, or reach out via WhatsApp.",
+  "ogImageUrl": null,
+  "sections": [
+    {
+      "_key": "hero",
+      "_type": "hero",
+      "backgroundImage": {
+        "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQDBQj/xAAcEAACAgIDAAAAAAAAAAAAAAAAAQIRAyEEE1H/xAAWAQEBAQAAAAAAAAAAAAAAAAADAgX/xAAZEQEBAAMBAAAAAAAAAAAAAAABAAIDExH/2gAMAwEAAhEDEQA/ANA5OVbCGeyvskg9Am/L23HUBP8AevQEG9gL3aeRf//Z",
+        "url": "https://cdn.sanity.io/images/ik9ho36m/production/58684679b050e0ad40d5c833cab3a8b120d1981d-1920x1080.jpg"
+      },
+      "headline": "Get in Touch",
+      "image": null,
+      "images": null,
+      "instructor": null,
+      "layout": "gradient",
+      "overlayLogo": null,
+      "subtitle": "Have questions? Want to book a class? We'd love to hear from you."
+    },
+    {
+      "_key": "contact-info",
+      "_type": "contactInfoSection",
+      "backgroundImage": null,
+      "closedDay": "Sunday: Closed",
+      "image": null,
+      "images": null,
+      "instructor": null,
+      "overlayLogo": null,
+      "studioHours": "By appointment only"
+    },
+    {
+      "_key": "contactForm",
+      "_type": "contactFormSection",
+      "backgroundImage": null,
+      "heading": "Send a message",
+      "image": null,
+      "images": null,
+      "instructor": null,
+      "overlayLogo": null,
+      "subtitle": "We'll get back to you as soon as possible.",
+      "successMessage": "Thank you! Your message has been sent."
+    },
+    {
+      "_key": "map",
+      "_type": "mapSection",
+      "additionalInfo": "We're located at the Woodstock Exchange, 66 Albert Road, Cape Town. Street parking available.",
+      "backgroundImage": null,
+      "heading": "Find Us",
+      "image": null,
+      "images": null,
+      "instructor": null,
+      "overlayLogo": null
+    }
+  ]
+}

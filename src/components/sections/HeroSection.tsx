@@ -1,4 +1,3 @@
-import { stegaClean } from "next-sanity";
 import type { HeroSectionProps } from "./hero/types";
 import { CenteredHero } from "./hero/CenteredHero";
 import { SplitHero } from "./hero/SplitHero";
@@ -21,7 +20,7 @@ export function HeroSection({
   ctaUrl,
   siteLogoUrl,
 }: HeroSectionProps) {
-  const variant = stegaClean(layout) || "centered";
+  const variant = layout || "centered";
 
   if (variant === "split") {
     return (

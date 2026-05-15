@@ -1,8 +1,7 @@
 import { MapPin, MessageCircle, Mail, Clock } from "lucide-react";
-import { sanityFetch } from "@/sanity/lib/live";
-import { SITE_SETTINGS_QUERY } from "@/sanity/lib/queries";
 import { Container } from "@/components/shared/Container";
 import { getExternalLinkRel } from "@/lib/seo";
+import { SITE_CONFIG } from "@/lib/constants";
 
 interface ContactInfoSectionProps {
   studioHours?: string | null;
@@ -20,52 +19,26 @@ export async function ContactInfoSection({
   studioHours,
   closedDay,
 }: ContactInfoSectionProps) {
-  const { data: settings } = await sanityFetch({
-    query: SITE_SETTINGS_QUERY,
-    stega: false,
-  });
+  const { address, phone, whatsapp, email, maps } = SITE_CONFIG;
+  const addressLines = [
+    [address.street, address.building].filter(Boolean).join(", "),
+    [address.city, address.province, address.postalCode].filter(Boolean).join(", "),
+  ].filter(Boolean);
 
-  if (!settings) return null;
-
-  const address = settings.address as {
-    street?: string;
-    building?: string;
-    city?: string;
-    province?: string;
-    postalCode?: string;
-  } | null;
-
-  const addressLines = address
-    ? [
-        [address.street, address.building].filter(Boolean).join(", "),
-        [address.city, address.province, address.postalCode]
-          .filter(Boolean)
-          .join(", "),
-      ].filter(Boolean)
-    : [];
-
-  const whatsappNumber = settings.whatsappNumber as string | null;
-  const phone = settings.phone as string | null;
-  const whatsappMessage = (settings.whatsappMessage as string | null) || "Hi! I'd like to find out more about C-4 Flow.";
-  const whatsappHref = whatsappNumber
-    ? `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`
-    : null;
-
-  const email = settings.contactEmail as string | null;
-  const mapsUrl = settings.mapsUrl as string | null;
+  const whatsappHref = `https://wa.me/${whatsapp.number}?text=${encodeURIComponent(whatsapp.message)}`;
 
   const cards: ContactCard[] = [
     {
       icon: <MapPin size={28} strokeWidth={1.5} />,
       title: "Visit Us",
       lines: addressLines,
-      href: mapsUrl || undefined,
+      href: maps.url,
     },
     {
       icon: <MessageCircle size={28} strokeWidth={1.5} />,
       title: "WhatsApp Us",
       lines: phone ? [phone] : [],
-      href: whatsappHref || undefined,
+      href: whatsappHref,
     },
     {
       icon: <Mail size={28} strokeWidth={1.5} />,
@@ -94,13 +67,9 @@ export async function ContactInfoSection({
             const inner = (
               <>
                 <div className="mb-3 text-primary-500">{card.icon}</div>
-                <h3 className="font-heading text-xl text-neutral-800">
-                  {card.title}
-                </h3>
+                <h3 className="font-heading text-xl text-neutral-800">{card.title}</h3>
                 <div className="mt-2 space-y-0.5 text-sm text-neutral-500">
-                  {card.lines.map((line, i) => (
-                    <p key={i}>{line}</p>
-                  ))}
+                  {card.lines.map((line, i) => <p key={i}>{line}</p>)}
                 </div>
               </>
             );
@@ -118,12 +87,7 @@ export async function ContactInfoSection({
                 </a>
               );
             }
-
-            return (
-              <div key={card.title} className={cardClasses}>
-                {inner}
-              </div>
-            );
+            return <div key={card.title} className={cardClasses}>{inner}</div>;
           })}
         </div>
       </Container>

@@ -1,8 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { urlFor } from "@/sanity/lib/image";
-import { stegaClean } from "next-sanity";
 import { motion } from "framer-motion";
 import { Container } from "@/components/shared/Container";
 import { SectionHeading } from "@/components/shared/SectionHeading";
@@ -11,7 +9,7 @@ interface Feature {
   _key: string;
   title: string;
   description: string;
-  icon?: { asset?: { _ref: string } } | null;
+  icon?: { url?: string | null } | null;
 }
 
 interface FeatureGridSectionProps {
@@ -21,45 +19,18 @@ interface FeatureGridSectionProps {
   style?: string | null;
 }
 
-/* ── Cards-style constants ── */
-
-const CARD_CLASS = [
-  "feature-card-1",
-  "feature-card-2",
-  "feature-card-3",
-  "feature-card-4",
-];
-
-const BLOB_CLASS = [
-  "feature-blob-1",
-  "feature-blob-2",
-  "feature-blob-3",
-  "feature-blob-4",
-];
-
-const ICON_CLASS = [
-  "feature-icon-1",
-  "feature-icon-2",
-  "feature-icon-3",
-  "feature-icon-4",
-];
-
-/* ── Shared animation ── */
+const CARD_CLASS = ["feature-card-1", "feature-card-2", "feature-card-3", "feature-card-4"];
+const BLOB_CLASS = ["feature-blob-1", "feature-blob-2", "feature-blob-3", "feature-blob-4"];
+const ICON_CLASS = ["feature-icon-1", "feature-icon-2", "feature-icon-3", "feature-icon-4"];
 
 const containerVariants = {
   hidden: {},
-  visible: {
-    transition: { staggerChildren: 0.15 },
-  },
+  visible: { transition: { staggerChildren: 0.15 } },
 };
 
 const cardVariants = {
   hidden: { opacity: 0, y: 30 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.5, ease: "easeOut" as const },
-  },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" as const } },
 };
 
 export function FeatureGridSection({
@@ -70,7 +41,7 @@ export function FeatureGridSection({
 }: FeatureGridSectionProps) {
   if (!features?.length) return null;
 
-  const variant = stegaClean(style) || "minimal";
+  const variant = style || "minimal";
   const count = features.length;
   const resolvedHeading = heading?.trim() || "Studio Benefits";
   const gridCols =
@@ -115,12 +86,10 @@ export function FeatureGridSection({
                     aria-hidden="true"
                   />
                   <div className="relative z-10">
-                    {feature.icon?.asset && (
-                      <div
-                        className={`mb-6 inline-flex h-16 w-16 items-center justify-center shadow-lg ${ICON_CLASS[idx]}`}
-                      >
+                    {feature.icon?.url && (
+                      <div className={`mb-6 inline-flex h-16 w-16 items-center justify-center shadow-lg ${ICON_CLASS[idx]}`}>
                         <Image
-                          src={urlFor(feature.icon).width(64).height(64).url()}
+                          src={feature.icon.url}
                           alt=""
                           width={34}
                           height={34}
@@ -128,12 +97,8 @@ export function FeatureGridSection({
                         />
                       </div>
                     )}
-                    <h3 className="mb-2 font-heading text-2xl text-primary-700">
-                      {feature.title}
-                    </h3>
-                    <p className="text-sm leading-relaxed text-neutral-600">
-                      {feature.description}
-                    </p>
+                    <h3 className="mb-2 font-heading text-2xl text-primary-700">{feature.title}</h3>
+                    <p className="text-sm leading-relaxed text-neutral-600">{feature.description}</p>
                   </div>
                 </motion.div>
               );
@@ -144,7 +109,6 @@ export function FeatureGridSection({
     );
   }
 
-  /* ── Minimal style (default) ── */
   return (
     <section className="py-8 md:py-24">
       <Container>
@@ -153,7 +117,6 @@ export function FeatureGridSection({
         ) : (
           <h2 className="sr-only">{resolvedHeading}</h2>
         )}
-
         <motion.div
           className={`grid items-start gap-10 ${gridCols}`}
           variants={containerVariants}
@@ -162,15 +125,11 @@ export function FeatureGridSection({
           viewport={{ once: true, amount: 0.2 }}
         >
           {features.map((feature) => (
-            <motion.div
-              key={feature._key}
-              className="text-center"
-              variants={cardVariants}
-            >
-              {feature.icon?.asset && (
+            <motion.div key={feature._key} className="text-center" variants={cardVariants}>
+              {feature.icon?.url && (
                 <div className="mb-4 flex justify-center">
                   <Image
-                    src={urlFor(feature.icon).width(96).height(96).url()}
+                    src={feature.icon.url}
                     alt=""
                     width={56}
                     height={56}
@@ -178,14 +137,8 @@ export function FeatureGridSection({
                   />
                 </div>
               )}
-
-              <h3 className="mb-2 font-heading text-3xl text-neutral-800 lg:text-4xl">
-                {feature.title}
-              </h3>
-
-              <p className="mx-auto max-w-xs text-sm leading-relaxed text-neutral-500">
-                {feature.description}
-              </p>
+              <h3 className="mb-2 font-heading text-3xl text-neutral-800 lg:text-4xl">{feature.title}</h3>
+              <p className="mx-auto max-w-xs text-sm leading-relaxed text-neutral-500">{feature.description}</p>
             </motion.div>
           ))}
         </motion.div>

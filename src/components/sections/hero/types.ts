@@ -1,7 +1,7 @@
-export interface SanityImageField {
-  asset?: { _ref: string };
-  alt?: string;
+export interface ImageField {
+  url?: string | null;
   lqip?: string | null;
+  alt?: string;
 }
 
 export interface SanityColorValue {
@@ -23,9 +23,9 @@ export interface HeroSectionProps {
   subtitle?: string | null;
   tagline?: string | null;
   body?: Array<Record<string, unknown>> | string | null;
-  backgroundImage?: SanityImageField | null;
-  sectionBackground?: SanityImageField | null;
-  overlayLogo?: SanityImageField | null;
+  backgroundImage?: ImageField | null;
+  sectionBackground?: ImageField | null;
+  overlayLogo?: ImageField | null;
   ctaText?: string | null;
   ctaUrl?: string | null;
   siteLogoUrl?: string | null;
@@ -65,14 +65,9 @@ const DESKTOP_ASPECT: Record<string, string> = {
 };
 
 interface AspectOptions {
-  /** Skip the lg: breakpoint (e.g. SplitHero where desktop is absolute-positioned). */
   skipDesktop?: boolean;
 }
 
-/**
- * Returns Tailwind aspect-ratio classes for responsive hero image overrides.
- * Returns an empty string when no overrides are set.
- */
 export function heroAspectClasses(
   ratio?: ImageRatio | null,
   opts?: AspectOptions,
@@ -91,7 +86,6 @@ export function heroAspectClasses(
   return parts.join(" ");
 }
 
-/** True when at least one responsive ratio override is set. */
 export function hasImageRatio(
   ratio?: ImageRatio | null,
   opts?: AspectOptions,

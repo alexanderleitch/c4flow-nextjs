@@ -4,18 +4,10 @@ import Image from "next/image";
 import { PortableText } from "@portabletext/react";
 import { Container } from "@/components/shared/Container";
 import { cn } from "@/lib/utils";
-import { stegaClean } from "next-sanity";
 import { motion } from "framer-motion";
 import { TrackedCtaLink } from "@/components/ui/TrackedCtaLink";
-import { urlFor } from "@/sanity/lib/image";
 import Link from "next/link";
 import { getExternalLinkRel } from "@/lib/seo";
-
-interface SanityImage {
-  asset?: { _ref?: string; _type?: string } | null;
-  hotspot?: { x: number; y: number } | null;
-  crop?: { top: number; bottom: number; left: number; right: number } | null;
-}
 
 interface SecondaryLink {
   _key?: string;
@@ -29,7 +21,7 @@ interface CtaSectionProps {
   buttonText: string;
   buttonUrl?: string | null;
   style?: string | null;
-  backgroundImage?: SanityImage | null;
+  backgroundImage?: { url?: string | null; lqip?: string | null } | null;
   secondaryLinks?: SecondaryLink[] | null;
 }
 
@@ -42,8 +34,8 @@ export function CtaSection({
   backgroundImage,
   secondaryLinks,
 }: CtaSectionProps) {
-  const cleanStyle = stegaClean(style) || "gradient";
-  const hasBgImage = cleanStyle === "bgImage" && backgroundImage?.asset;
+  const cleanStyle = style || "gradient";
+  const hasBgImage = cleanStyle === "bgImage" && !!backgroundImage?.url;
 
   return (
     <section
@@ -56,19 +48,20 @@ export function CtaSection({
         hasBgImage && "text-neutral-800"
       )}
     >
-      {/* Background image */}
       {hasBgImage && (
         <Image
-          src={urlFor(backgroundImage).width(1920).height(800).url()}
+          src={backgroundImage!.url!}
           alt=""
           fill
           className="object-cover"
           sizes="100vw"
           priority
+          {...(backgroundImage!.lqip
+            ? { placeholder: "blur" as const, blurDataURL: backgroundImage!.lqip }
+            : {})}
         />
       )}
 
-      {/* Decorative blurred orb */}
       {cleanStyle !== "light" && !hasBgImage && (
         <div
           className="absolute -right-24 -top-24 h-96 w-96 rounded-full bg-pink-400/20 blur-3xl"

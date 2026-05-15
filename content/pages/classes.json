@@ -1,0 +1,205 @@
+{
+  "slug": "classes",
+  "title": "Classes",
+  "seoTitle": "Our Classes ",
+  "seoDescription": "Learn more about our classes. From pole tricks to exotic flow and floorwork, C-4 Flow Pole Studio offers group and private classes for all levels in Cape Town.",
+  "ogImageUrl": null,
+  "sections": [
+    {
+      "_key": "hero",
+      "_type": "hero",
+      "backgroundImage": {
+        "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAeABQDASIAAhEBAxEB/8QAGQAAAwADAAAAAAAAAAAAAAAAAAYHAwQF/8QAJBAAAgEEAgEEAwAAAAAAAAAAAQIDAAQFERIhBhQxQXFRgaH/xAAVAQEBAAAAAAAAAAAAAAAAAAABBf/EAB4RAAICAgIDAAAAAAAAAAAAAAACARETUTFBAyGx/9oADAMBAAIRAxEAPwBOOAZJdFDw/OqwXmEVFPEEj6qv22LEluQddDfYpdy8uMgMMTFjPNsKgHe6M2xwXwSmTF6YjiaKoj+PSbBk1yI2QPiinOuwwTott5iYmspliOiUI/lTjw/xaO5llyGVDzJE3G3DnZXR7NU9HX0zhi52pFaWNa3ixEKLD0Afn37qTKvXNlFfMkdUJGVCG9fipA+qK7t40PqG1bJ+yaKId49V8C0ns//Z",
+        "url": "https://cdn.sanity.io/images/ik9ho36m/production/aedba650e7c0bfd215b699e020a66eee8f48bcaa-1413x2123.jpg"
+      },
+      "body": [
+        {
+          "_key": "a084a1057451",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "19835f0302fb",
+              "_type": "span",
+              "marks": [],
+              "text": "At C-4 Flow, we offer both group and private pole and exotic dance classes across a variety of styles. You can book a single class or choose a package that fits your rhythm. Group classes bring connection, shared energy, and a close, supportive studio vibe. Private sessions offer focused, one-on-one time to refine technique, build confidence, and move at your own pace. Beginners are always welcome, and every class is designed to meet you where you are."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "headline": "Our Classes",
+      "headlineColor": {
+        "_type": "color",
+        "alpha": 1,
+        "hex": "#000000",
+        "hsl": {
+          "_type": "hslaColor",
+          "a": 1,
+          "h": 205.19072147976664,
+          "l": 0,
+          "s": 0
+        },
+        "hsv": {
+          "_type": "hsvaColor",
+          "a": 1,
+          "h": 205.19072147976664,
+          "s": 0,
+          "v": 0
+        },
+        "rgb": {
+          "_type": "rgbaColor",
+          "a": 1,
+          "b": 0,
+          "g": 0,
+          "r": 0
+        }
+      },
+      "image": null,
+      "images": null,
+      "instructor": null,
+      "layout": "split",
+      "overlayLogo": null,
+      "sectionBackground": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-58684679b050e0ad40d5c833cab3a8b120d1981d-1920x1080-jpg",
+          "_type": "reference"
+        }
+      },
+      "subtitle": "Choose your flow: group energy or private focus."
+    },
+    {
+      "_key": "classes",
+      "_type": "classesSection",
+      "backgroundImage": null,
+      "columns": 3,
+      "heading": "Group Classes",
+      "image": null,
+      "images": null,
+      "instructor": null,
+      "overlayLogo": null,
+      "showBookingNote": true,
+      "subtitle": "Choose your own adventure and move to express."
+    },
+    {
+      "_key": "group-pricing",
+      "_type": "pricingSection",
+      "backgroundImage": null,
+      "bundleCategory": "group",
+      "footerNote": "To book packages, please Contact Us.",
+      "heading": "Group Class Bundles",
+      "image": null,
+      "images": null,
+      "instructor": null,
+      "overlayLogo": null,
+      "subtitle": "Flexible options to fit your schedule and budget."
+    },
+    {
+      "_key": "private-pricing",
+      "_type": "pricingSection",
+      "backgroundImage": null,
+      "bundleCategory": "private",
+      "footerNote": "To book private classes & packages, please Contact Us.",
+      "heading": "Private Classes",
+      "image": null,
+      "images": null,
+      "instructor": null,
+      "overlayLogo": null,
+      "subtitle": "Flow your own way with one-on-one coaching. You deserve it."
+    },
+    {
+      "_key": "class-details",
+      "_type": "classDetailsSection",
+      "backgroundImage": null,
+      "heading": "More About Our Classes...",
+      "image": null,
+      "images": null,
+      "instructor": null,
+      "overlayLogo": null,
+      "subtitle": "We offer classes for all skill levels, please contact us if you have any questions or would like to book a private lesson."
+    },
+    {
+      "_key": "schedule",
+      "_type": "scheduleSection",
+      "backgroundImage": null,
+      "heading": "Weekly Schedule",
+      "image": null,
+      "images": null,
+      "instructor": null,
+      "overlayLogo": null,
+      "subtitle": "Plan your week with C-4 Flow."
+    },
+    {
+      "_key": "cta",
+      "_type": "ctaSection",
+      "backgroundImage": {
+        "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQDBQj/xAAcEAACAgIDAAAAAAAAAAAAAAAAAQIRAyEEE1H/xAAWAQEBAQAAAAAAAAAAAAAAAAADAgX/xAAZEQEBAAMBAAAAAAAAAAAAAAABAAIDExH/2gAMAwEAAhEDEQA/ANA5OVbCGeyvskg9Am/L23HUBP8AevQEG9gL3aeRf//Z",
+        "url": "https://cdn.sanity.io/images/ik9ho36m/production/58684679b050e0ad40d5c833cab3a8b120d1981d-1920x1080.jpg"
+      },
+      "buttonText": "Book a Class",
+      "buttonUrl": "https://movetoexpresswithc4flow.setmore.com/",
+      "heading": "Ready to get moving?",
+      "image": null,
+      "images": null,
+      "instructor": null,
+      "overlayLogo": null,
+      "style": "bgImage",
+      "subtitle": [
+        {
+          "_key": "67d078aa493d",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "f4d5cbc6af7c",
+              "_type": "span",
+              "marks": [],
+              "text": "If you have any questions, please refer to our "
+            },
+            {
+              "_key": "c0bdd98fc376",
+              "_type": "span",
+              "marks": [
+                "e3a548243769"
+              ],
+              "text": "FAQs"
+            },
+            {
+              "_key": "75a1e5b111ed",
+              "_type": "span",
+              "marks": [],
+              "text": " or "
+            },
+            {
+              "_key": "c18f26758474",
+              "_type": "span",
+              "marks": [
+                "e1f3c3c2188b"
+              ],
+              "text": "Contact Us"
+            },
+            {
+              "_key": "51106b28bffc",
+              "_type": "span",
+              "marks": [],
+              "text": ". We look forward to having you in class!"
+            }
+          ],
+          "markDefs": [
+            {
+              "_key": "e3a548243769",
+              "_type": "link",
+              "href": "/about#faqs"
+            },
+            {
+              "_key": "e1f3c3c2188b",
+              "_type": "link",
+              "href": "/contact"
+            }
+          ],
+          "style": "normal"
+        }
+      ]
+    }
+  ]
+}

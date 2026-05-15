@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { PortableText } from "@portabletext/react";
-import { urlFor, blurProps } from "@/sanity/lib/image";
 import { cn } from "@/lib/utils";
 import type { HeroSectionProps } from "./types";
 import { heroAspectClasses, hasImageRatio } from "./types";
@@ -30,19 +29,21 @@ export function SplitHero({
   ctaText,
   ctaUrl,
 }: SplitHeroProps) {
-  const hasSectionBg = !!sectionBackground?.asset;
+  const hasSectionBg = !!sectionBackground?.url;
 
   return (
     <section className="relative overflow-hidden bg-white">
       {hasSectionBg && (
         <Image
-          src={urlFor(sectionBackground).width(1920).height(800).url()}
+          src={sectionBackground.url!}
           alt=""
           fill
           priority
           className="hidden object-cover lg:block"
           sizes="100vw"
-          {...blurProps(sectionBackground.lqip)}
+          {...(sectionBackground.lqip
+            ? { placeholder: "blur" as const, blurDataURL: sectionBackground.lqip }
+            : {})}
         />
       )}
 
@@ -106,15 +107,17 @@ export function SplitHero({
             "lg:[clip-path:polygon(18%_0%,100%_0%,100%_100%,0%_100%)]",
         )}
       >
-        {backgroundImage?.asset ? (
+        {backgroundImage?.url ? (
           <Image
-            src={urlFor(backgroundImage).width(1200).quality(85).url()}
+            src={backgroundImage.url}
             alt={backgroundImage.alt || ""}
             fill
             priority
             className="object-cover"
             sizes="(max-width: 1024px) 100vw, 50vw"
-            {...blurProps(backgroundImage.lqip)}
+            {...(backgroundImage.lqip
+              ? { placeholder: "blur" as const, blurDataURL: backgroundImage.lqip }
+              : {})}
           />
         ) : (
           <div className="absolute inset-0 bg-linear-to-br from-primary-100 via-pink-100 to-primary-50" />

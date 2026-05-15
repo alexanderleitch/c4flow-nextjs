@@ -1,13 +1,5 @@
 import type { Metadata, Viewport } from "next";
 import { Montserrat, Mynerve } from "next/font/google";
-import { SanityLive } from "@/sanity/lib/live";
-import { VisualEditing } from "next-sanity/visual-editing";
-import { draftMode } from "next/headers";
-import { sanityFetch } from "@/sanity/lib/live";
-import {
-  ANNOUNCEMENT_BAR_QUERY,
-} from "@/sanity/lib/queries";
-import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { WhatsAppButton } from "@/components/layout/WhatsAppButton";
@@ -66,19 +58,11 @@ export const metadata: Metadata = {
       { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
       { url: "/favicon-48x48.png", sizes: "48x48", type: "image/png" },
     ],
-    apple: [
-      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
-    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
   },
   manifest: "/site.webmanifest",
-  openGraph: {
-    type: "website",
-    locale: "en_ZA",
-    siteName: "C4 Flow",
-  },
-  twitter: {
-    card: "summary_large_image",
-  },
+  openGraph: { type: "website", locale: "en_ZA", siteName: "C4 Flow" },
+  twitter: { card: "summary_large_image" },
   robots: {
     index: true,
     follow: true,
@@ -97,91 +81,34 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  const [knowledge, { data: announcement }] = await Promise.all([
-    getKnowledgeBase(),
-    sanityFetch({ query: ANNOUNCEMENT_BAR_QUERY, stega: false }),
-  ]);
-
+}: Readonly<{ children: React.ReactNode }>) {
+  const knowledge = await getKnowledgeBase();
   const { site } = knowledge;
-  const logoUrl = site.logoUrl;
 
   return (
     <html
       lang="en"
       className={`${montserrat.variable} ${mynerve.variable} scroll-smooth`}
-      style={
-        {
-          "--header-h": "65px",
-          "--banner-h": announcement?.enabled && announcement?.text ? "36px" : "0px",
-        } as React.CSSProperties
-      }
+      style={{ "--header-h": "65px", "--banner-h": "0px" } as React.CSSProperties}
     >
       <head>
-        <link
-          rel="alternate"
-          type="application/json"
-          href="/knowledge.json"
-          title="C4 Flow knowledge base"
-        />
-        <link
-          rel="alternate"
-          type="application/json"
-          href="/classes.json"
-          title="C4 Flow classes feed"
-        />
-        <link
-          rel="alternate"
-          type="application/json"
-          href="/schedule.json"
-          title="C4 Flow schedule feed"
-        />
-        <link
-          rel="alternate"
-          type="application/json"
-          href="/pricing.json"
-          title="C4 Flow pricing feed"
-        />
-        <link
-          rel="alternate"
-          type="text/plain"
-          href="/llms.txt"
-          title="C4 Flow llms.txt"
-        />
-        {/* Blocking script: hide dismissed banner before first paint to prevent CLS */}
-        {announcement?.enabled && announcement?.text && (
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `(function(){try{var v=localStorage.getItem("c4flow-banner-dismissed");if(v===${JSON.stringify(announcement._updatedAt)}){document.documentElement.classList.add("banner-dismissed");document.documentElement.style.setProperty("--banner-h","0px")}}catch(e){}})()`,
-            }}
-          />
-        )}
-        <JsonLd
-          data={buildDanceSchoolJsonLd(knowledge)}
-        />
+        <link rel="alternate" type="application/json" href="/knowledge.json" title="C4 Flow knowledge base" />
+        <link rel="alternate" type="application/json" href="/classes.json" title="C4 Flow classes feed" />
+        <link rel="alternate" type="application/json" href="/schedule.json" title="C4 Flow schedule feed" />
+        <link rel="alternate" type="application/json" href="/pricing.json" title="C4 Flow pricing feed" />
+        <link rel="alternate" type="text/plain" href="/llms.txt" title="C4 Flow llms.txt" />
+        <JsonLd data={buildDanceSchoolJsonLd(knowledge)} />
       </head>
       <body className="font-body antialiased" suppressHydrationWarning>
         <ScrollToTop />
         <a href="#main-content" className="skip-to-content">
           Skip to content
         </a>
-        <Header
-          siteName={site.name}
-          logoUrl={logoUrl}
-        />
-        {announcement?.enabled && announcement?.text && (
-          <AnnouncementBar
-            text={announcement.text}
-            link={announcement.link}
-            version={announcement._updatedAt}
-          />
-        )}
+        <Header siteName={site.name} logoUrl={site.logoUrl} />
         {children}
         <Footer
           siteName={site.name}
-          logoUrl={logoUrl}
+          logoUrl={site.logoUrl}
           email={site.email}
           phone={site.phone}
           instagramUrl={site.instagramUrl}
@@ -199,9 +126,7 @@ export default async function RootLayout({
             message={site.whatsappMessage || undefined}
           />
         )}
-        <SanityLive />
         <GoogleAnalytics />
-        {(await draftMode()).isEnabled && <VisualEditing />}
       </body>
     </html>
   );
