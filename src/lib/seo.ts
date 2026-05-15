@@ -17,21 +17,9 @@ function isHttpUrl(href: string): boolean {
   }
 }
 
-function isSetmoreUrl(href: string): boolean {
-  if (!isHttpUrl(href)) return false;
-  const hostname = new URL(href).hostname.toLowerCase();
-  return hostname === "setmore.com" || hostname.endsWith(".setmore.com");
-}
-
 export function getExternalLinkRel(href: string): string | undefined {
   if (!isHttpUrl(href)) return undefined;
-
-  const rel = ["noopener", "noreferrer"];
-  if (isSetmoreUrl(href)) {
-    rel.unshift("nofollow", "sponsored");
-  }
-
-  return rel.join(" ");
+  return "noopener noreferrer";
 }
 
 export function buildFaqJsonLd(

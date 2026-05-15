@@ -263,7 +263,7 @@ export default async function ClassPage({ params }: ClassPageProps) {
                 <div>
                   <dt className="font-medium text-neutral-700">Booking</dt>
                   <dd className="text-neutral-500">
-                    Online via Setmore or by contacting {knowledge.site.name}.
+                    Contact Cattleya directly via WhatsApp or the contact page to book your spot.
                   </dd>
                 </div>
                 <div>
