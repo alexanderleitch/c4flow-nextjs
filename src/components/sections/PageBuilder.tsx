@@ -6,7 +6,6 @@ import { ScheduleSection } from "./ScheduleSection";
 import { RichTextSection } from "./RichTextSection";
 import { GallerySection } from "./GallerySection";
 import { CtaSection } from "./CtaSection";
-import { ContactFormSection } from "./ContactFormSection";
 import { MapSection } from "./MapSection";
 import { TestimonialsSectionServer } from "./TestimonialsSectionServer";
 import { FaqSection } from "./FaqSection";
@@ -118,15 +117,6 @@ export function PageBuilder({ sections, siteLogoUrl }: PageBuilderProps) {
                 style={section.style as string | null}
                 backgroundImage={section.backgroundImage as never}
                 secondaryLinks={section.secondaryLinks as never}
-              />
-            );
-          case "contactFormSection":
-            return (
-              <ContactFormSection
-                key={section._key}
-                heading={section.heading as string | null}
-                subtitle={section.subtitle as string | null}
-                successMessage={section.successMessage as string | null}
               />
             );
           case "testimonialsSection":
