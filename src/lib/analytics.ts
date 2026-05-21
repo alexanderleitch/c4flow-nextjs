@@ -49,16 +49,6 @@ export function trackWhatsAppClick() {
   });
 }
 
-// ── Contact Form ──
-
-export function trackContactFormSubmit() {
-  sendEvent({
-    action: "contact_form_submit",
-    category: "contact",
-    label: "contact_page",
-  });
-}
-
 // ── Gallery ──
 
 export function trackGalleryOpen(imageIndex: number) {

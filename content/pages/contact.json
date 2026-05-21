@@ -32,18 +32,6 @@
       "studioHours": "By appointment only"
     },
     {
-      "_key": "contactForm",
-      "_type": "contactFormSection",
-      "backgroundImage": null,
-      "heading": "Send a message",
-      "image": null,
-      "images": null,
-      "instructor": null,
-      "overlayLogo": null,
-      "subtitle": "We'll get back to you as soon as possible.",
-      "successMessage": "Thank you! Your message has been sent."
-    },
-    {
       "_key": "map",
       "_type": "mapSection",
       "additionalInfo": "We're located at the Woodstock Exchange, 66 Albert Road, Cape Town. Street parking available.",
